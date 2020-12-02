@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Background Image Styles */
+
+.background-img {
+    background-image: url("theBackground.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    border-bottom: solid 2px #280607;
+}
+
+
+/* Title Styles */
+
+.page-heading {
+    font-family: 'Spartan', sans-serif;
+    color: #F7EBC3;
+    background-color: #280607;
+    padding: 10px;
+}
+
+
+/* Navigation Styles */
+
+.list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    height: 500px;
+    margin-top: 40px;
+    margin-right: 20px;
+    border-right: solid 1px #280607;
+}
+
+.list-item {
+    font-family: 'Spartan', sans-serif;
+    text-decoration: none;
+    color: #B4D2BA;
+    background-color: #280607;
+    padding: 10px;
+}
+
+.main-styling {
+    background-color: #280607;
+}
+
+.rome-image {
+    filter: grayscale(100%);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px;
+    width: 90%;
+}
+
+
+/* Colors
+dark blue green: #0B6570
+black/dark navy: #280607
+blue sage: #81C0B5
+sage: #B4D2BA
+cream: #F7EBC3 */
