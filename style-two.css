@@ -12,7 +12,7 @@
 
 .background-formatting::before {
     content: "";
-    background-image: url("theBackground.jpg");
+    background-image: url("oceanBackground.jpg");
     background-size: cover;
     position: absolute;
     top: 0px;
@@ -73,4 +73,8 @@ body {
     text-decoration: none;
     color: #F7EBC3;
     padding: 10px;
+}
+
+.list-item:hover {
+    color: #F9FC9D;
 }
