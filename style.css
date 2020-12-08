@@ -5,19 +5,7 @@
 }
 
 
-/* Background Image Styles */
-
-.background-styling {
-    background-image: url("oceanBackground.jpg");
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
-    border-bottom: solid 2px #280607;
-    position: relative;
-}
-
-
-/* Title Styles */
+/* Page Heading Styles - Title of the Website */
 
 .page-heading {
     font-family: 'Spartan', sans-serif;
@@ -25,6 +13,10 @@
     font-size: xx-large;
     background-color: #280607;
     padding: 10px;
+    position: sticky;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
 }
 
 
@@ -36,7 +28,6 @@
     flex-direction: row;
     justify-content: space-evenly;
     background-color: #280607;
-    margin-top: 10px;
     padding: 10px;
 }
 
@@ -52,72 +43,113 @@
 }
 
 
-/* Testimonials Section Styles */
+/* Main Content - 
+Divided into 3 Sections.
 
-.section-parent-box {
+Section One
+(Landing Page Background Image Styling) */
+
+.background-styling {
+    background-image: url("oceanBackground.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+
+/* Section Two
+(Testimonials Section Styles) */
+
+.parent-box {
     background-color: rgba(129, 192, 181, 0.8);
-    position: absolute;
-    bottom: 10px;
-    max-height: 25%;
+    margin-bottom: 20px;
+    height: 20vh;
+    padding-top: 5px;
+    padding-bottom: 5px;
     overflow: hidden;
+    transition-duration: 600ms;
+    transition-property: height text-align;
+    transition-timing-function: cubic-bezier(.11, -0.23, .83, .67);
 }
 
 .section-heading {
     font-family: 'Spartan', sans-serif;
     background-color: rgba(129, 192, 181, 0.9);
     color: #280607;
-    padding: 10px;
-    position: sticky;
-    top: 0px;
+    padding: 15px;
+    height: 8vh;
 }
 
 .section-text {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 16px;
-    padding-top: 20px;
-    padding-right: 10px;
-    padding-bottom: 5px;
-    padding-left: 10px;
     color: #280607;
     font-style: italic;
+    text-align: center;
+    padding: 15px;
 }
 
 .testimonial-provider {
     font-family: 'Spartan', sans-serif;
     font-size: 14px;
-    padding-top: 5px;
-    padding-bottom: 10px;
-    padding-left: 25px;
     color: #280607;
+    text-align: center;
 }
 
 
-/* Photograph on second half of page */
+/* Hover Effect & Animation Styles */
 
-.main-styling {
-    background-color: #280607;
+.parent-box:hover {
+    background-color: rgba(129, 192, 181, 0.9);
+    height: 75vh;
 }
+
+
+/* Section Three
+(Photograph of Rome Styles) */
 
 .rome-image {
     filter: grayscale(100%);
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 15px;
+    margin: 20px auto 20px auto;
     width: 90%;
+    height: 90vh;
+    object-fit: cover;
 }
 
 
-/* Footer background styling */
+/* Audio Controls Styles */
+
+.audio-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.audio-controls {
+    height: 30px;
+    width: 500px;
+}
+
+
+/* Entire Page Background Styles */
 
 body {
-    background-color: #81C0B5;
+    background-color: #280607;
+    position: relative;
 }
 
 
-/* Colors
+/* Colors used throughout site:
 dark blue green: #0B6570
 black/dark navy: #280607
 blue sage: #81C0B5
 sage: #B4D2BA
-cream: #F7EBC3 */
+cream: #F7EBC3
+highlighted link: #F9FC9D */
