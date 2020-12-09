@@ -4,13 +4,67 @@
     box-sizing: border-box;
 }
 
-.background-formatting {
+
+/* Site Heading Styles */
+
+.website-heading {
+    font-family: 'Spartan', sans-serif;
+    color: #F7EBC3;
+    font-size: xx-large;
+    background-color: #280607;
+    padding: 10px;
+    position: sticky;
+}
+
+.page-heading {
+    font-family: 'Spartan', sans-serif;
+    color: #280607;
+    font-weight: bolder;
+    background-color: rgba(11, 101, 112, 0.5);
+    height: 75px;
+    padding-top: 20px;
+    padding-left: 10px;
+}
+
+
+/* Large Image Styles */
+
+.image-container {
+    background-color: #280607;
+}
+
+.image-styling {
+    width: 90%;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    object-fit: cover;
+}
+
+
+/* Main Content Styling and Structure */
+
+.flex-parent {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-text {
+    padding: 10px;
+}
+
+
+/* Background Styles */
+
+.background-image-formatting {
     position: relative;
     height: 75vh;
     width: 100%;
 }
 
-.background-formatting::before {
+.background-image-formatting::before {
     content: "";
     background-image: url("oceanBackground.jpg");
     background-size: cover;
@@ -19,45 +73,15 @@
     right: 0px;
     bottom: 0px;
     left: 0px;
-    opacity: 0.30;
-}
-
-.website-heading {
-    font-family: 'Spartan', sans-serif;
-    color: #F7EBC3;
-    text-align: right;
-    background-color: #280607;
-    padding: 10px;
-    margin-bottom: 5px;
-}
-
-.flex-parent {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-}
-
-.page-heading {
-    font-family: 'Spartan', sans-serif;
-    color: #280607;
-    font-weight: bolder;
-    background-color: rgba(11, 101, 112, 0.8);
-    height: 75px;
-    padding-top: 20px;
-    padding-left: 10px;
-}
-
-.flex-item-b {
-    background-color: rgba(129, 192, 181, 0.9);
-    color: #280607;
-    font-size: large;
-    padding: 20px;
-    height: 75vh;
+    opacity: 0.25;
 }
 
 body {
     background-color: #81C0B5;
 }
+
+
+/* Footer Navigation Styles */
 
 .list {
     list-style: none;
@@ -78,3 +102,12 @@ body {
 .list-item:hover {
     color: #F9FC9D;
 }
+
+
+/* Colors used throughout site:
+dark blue green: #0B6570
+black/dark navy: #280607
+blue sage: #81C0B5
+sage: #B4D2BA
+cream: #F7EBC3
+highlighted link: #F9FC9D */
