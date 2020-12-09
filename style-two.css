@@ -56,6 +56,38 @@
 }
 
 
+/* TABLE STYLES */
+
+.entire-table {
+    width: 90%;
+    object-fit: center;
+    margin: 30px auto 10px auto;
+    border: solid 2px #280607;
+}
+
+.header {
+    background-color: #280607;
+    color: #F7EBC3;
+    font-family: 'Spartan', sans-serif;
+    font-weight: 500;
+}
+
+.item {
+    background-color: #81C0B5;
+}
+
+.cell {
+    border: solid 2px #280607;
+    text-align: center;
+    padding: 5px;
+}
+
+.controls-styling {
+    height: 25px;
+    width: 250px;
+}
+
+
 /* Background Styles */
 
 .background-image-formatting {
