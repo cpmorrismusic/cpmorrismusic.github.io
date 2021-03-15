@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style-two.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@100;500&display=swap" rel="stylesheet">
+    <title>EDIT</title>
+</head>
+
+<body>
+
+    <h1 class="website-heading">CHRISTOPHER MORRIS MUSIC</h1>
+    <h2 class="page-heading">EDIT</h2>
+
+    <main class="background-image-formatting flex-parent">
+        EDIT
+    </main>
+
+    <footer>
+        <ul class="list">
+            <li><a class="list-item" href="career.html">Career & Education</a></li>
+            <li><a class="list-item" href="contact.html">Contact</a></li>
+            <li><a class="list-item" href="library.html">Digital Music Library</a></li>
+            <li> <a class="list-item" href="downloads.html">Downloads</a></li>
+            <li><a class="list-item" href="resources.html">Student Resources</a></li>
+            <li><a class="list-item" href="works.html">Works</a></li>
+            <li><a class="list-item" href="index.html">Return to Home</a></li>
+        </ul>
+    </footer>
+
+
+</body>
+
+</html>

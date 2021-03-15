@@ -4,26 +4,77 @@
     box-sizing: border-box;
 }
 
+.test {
+    width: 400px;
+    height: 200vh;
+    background-color: pink;
+}
+
 
 /* Site Heading Styles */
 
-.website-heading {
+body {
+    position: relative;
+}
+
+.website-title {
     font-family: 'Spartan', sans-serif;
     color: #F7EBC3;
     font-size: xx-large;
     background-color: #280607;
     padding: 10px;
-    position: sticky;
 }
 
 .page-heading {
     font-family: 'Spartan', sans-serif;
     color: #280607;
     font-weight: bolder;
-    background-color: rgba(11, 101, 112, 0.5);
+    background-color: rgb(11, 101, 112);
     height: 75px;
     padding-top: 20px;
     padding-left: 10px;
+}
+
+.side-page-nav {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: rgb(11, 101, 112);
+    padding-bottom: 10px;
+}
+
+.side-page-nav-link {
+    font-family: 'Spartan', sans-serif;
+    text-decoration: none;
+    color: #280607;
+}
+
+.side-page-nav-link:hover {
+    color: #F9FC9D;
+}
+
+.sub-heading {
+    font-family: 'Spartan', sans-serif;
+    color: #280607;
+    font-weight: bolder;
+    padding-top: 20px;
+    padding-left: 10px;
+}
+
+.to-top {
+    font-family: 'Spartan', sans-serif;
+    color: #280607;
+    font-weight: bolder;
+    padding-top: 20px;
+    padding-right: 30px;
+    text-decoration: none;
+    text-align: right;
+    z-index: 3;
+}
+
+.to-top:hover {
+    color: #F9FC9D;
 }
 
 
@@ -92,7 +143,7 @@
 
 .background-image-formatting {
     position: relative;
-    height: 75vh;
+    height: 100vh;
     width: 100%;
 }
 
