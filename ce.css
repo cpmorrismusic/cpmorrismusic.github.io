@@ -51,6 +51,19 @@ body {
 }
 
 
+/* LARGE IMAGE STYLES */
+
+.image-styling {
+    width: 60%;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    object-fit: cover;
+}
+
+
 /* MAIN CONTENT */
 
 #main-section {
