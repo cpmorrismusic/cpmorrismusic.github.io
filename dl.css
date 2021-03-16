@@ -1,0 +1,186 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* BACKGROUND STYLES */
+
+#background-image {
+    position: relative;
+    height: 300vh;
+    width: 100%;
+}
+
+#background-image::before {
+    content: "";
+    background-image: url("oceanBackground.jpg");
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.25;
+}
+
+body {
+    background-color: #81C0B5;
+}
+
+
+/* SITE TITLES STYLES */
+
+.site-title {
+    font-family: 'Spartan', sans-serif;
+    color: #F7EBC3;
+    font-size: xx-large;
+    background-color: #280607;
+    padding: 10px;
+}
+
+.page-title {
+    font-family: 'Spartan', sans-serif;
+    color: #280607;
+    font-weight: bolder;
+    background-color: rgb(11, 101, 112);
+    height: 75px;
+    padding-top: 20px;
+    padding-left: 10px;
+}
+
+
+/* PAGE NAVIGATION STYLES */
+
+.sub-nav {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: rgb(11, 101, 112);
+    padding-bottom: 10px;
+}
+
+.page-link {
+    font-family: 'Spartan', sans-serif;
+    text-decoration: none;
+    color: #280607;
+}
+
+.page-link:hover {
+    color: #F9FC9D;
+}
+
+.to-top {
+    font-family: 'Spartan', sans-serif;
+    color: #280607;
+    font-weight: bolder;
+    width: fit-content;
+    padding-top: 20px;
+    padding-right: 30px;
+    text-decoration: none;
+    align-self: flex-end;
+    z-index: 3;
+}
+
+.to-top:hover {
+    color: #F9FC9D;
+}
+
+
+/* FOOT NAVIGATION STYLES */
+
+.foot-nav {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: #280607;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    z-index: 3;
+}
+
+.foot-link {
+    font-family: 'Spartan', sans-serif;
+    text-decoration: none;
+    color: #F7EBC3;
+    padding: 10px;
+}
+
+.foot-link:hover {
+    color: #F9FC9D;
+}
+
+
+/* SUB-HEADING STYLES */
+
+.sub-heading {
+    font-family: 'Spartan', sans-serif;
+    color: #280607;
+    font-weight: bolder;
+    padding-top: 20px;
+    padding-left: 10px;
+}
+
+
+/* MAIN SECTION STYLES*/
+
+.main-section {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+
+/* TABLE STYLES */
+
+.table {
+    width: 90%;
+    object-fit: center;
+    margin: 30px auto 10px auto;
+    border: solid 2px #280607;
+    z-index: 2;
+}
+
+.header {
+    background-color: #280607;
+    color: #F7EBC3;
+    font-family: 'Spartan', sans-serif;
+    font-weight: 500;
+}
+
+.item {
+    background-color: rgba(129, 192, 181, .6);
+}
+
+.cell {
+    border: solid 2px #280607;
+    text-align: center;
+    padding: 5px;
+}
+
+.controls {
+    height: 25px;
+    width: 250px;
+}
+
+
+/* Colors used throughout site:
+dark blue green: #0B6570
+black/dark navy: #280607
+blue sage: #81C0B5
+sage: #B4D2BA
+cream: #F7EBC3
+highlighted link: #F9FC9D */
+
+
+/* Additional CSS to test site
+.test {
+    width: 400px;
+    height: 200vh;
+    background-color: pink;
+} */
