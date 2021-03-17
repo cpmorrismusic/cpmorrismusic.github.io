@@ -5,31 +5,6 @@
 }
 
 
-/* BACKGROUND STYLES */
-
-#background-image {
-    position: relative;
-    height: 100vh;
-    width: 100%;
-}
-
-#background-image::before {
-    content: "";
-    background-image: url("oceanBackground.jpg");
-    background-size: cover;
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    bottom: 0px;
-    left: 0px;
-    opacity: 0.25;
-}
-
-body {
-    background-color: #81C0B5;
-}
-
-
 /* SITE TITLES STYLES */
 
 .titles {
@@ -51,22 +26,60 @@ body {
 }
 
 
-/* LARGE IMAGE STYLES */
+/* SUB-HEADING STYLES */
 
-.image-styling {
-    width: 60%;
-    display: block;
-    margin-right: auto;
-    margin-left: auto;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    object-fit: cover;
+.sub-heading {
+    font-family: 'Spartan', sans-serif;
+    color: #280607;
+    font-weight: bolder;
+    padding-top: 20px;
+    padding-left: 10px;
+}
+
+
+/* PAGE NAVIGATION STYLES */
+
+.sub-nav {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: #280607;
+    padding: 10px;
+}
+
+.page-link {
+    font-family: 'Spartan', sans-serif;
+    text-decoration: none;
+    font-weight: bold;
+    color: #F7EBC3;
+}
+
+.page-link:hover {
+    color: #F9FC9D;
+}
+
+.to-top {
+    font-family: 'Spartan', sans-serif;
+    color: #280607;
+    font-weight: bolder;
+    width: fit-content;
+    padding-top: 20px;
+    padding-right: 30px;
+    text-decoration: none;
+    align-self: flex-end;
+    z-index: 3;
+}
+
+.to-top:hover {
+    color: #F9FC9D;
 }
 
 
 /* MAIN CONTENT */
 
-#main-section {
+
+/*#main-section {
     width: 90%;
     margin: auto;
     display: block;
@@ -80,7 +93,42 @@ body {
 #empty-div {
     height: 40px;
     width: 100%;
+}*/
+
+
+/* LARGE IMAGE STYLES */
+
+.img-container {
+    display: flex;
+    justify-content: center;
 }
+
+#image {
+    width: 40%;
+}
+
+
+/* BACKGROUND STYLES */
+
+#background-image {
+    background-image: url("sidePageBackground.png");
+    background-size: cover;
+    background-color: rgba(129, 192, 181, .6);
+}
+
+
+/*#background-image::before {
+    content: "";
+    background-image: url("oceanBackground.jpg");
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.25;
+    z-index: 1;
+} */
 
 
 /* FOOT NAVIGATION STYLES */
