@@ -8,25 +8,9 @@
 /* BACKGROUND STYLES */
 
 #background-image {
-    position: relative;
-    height: 100vh;
-    width: 100%;
-}
-
-#background-image::before {
-    content: "";
-    background-image: url("oceanBackground.jpg");
+    background-image: url("sidePageBackground.png");
     background-size: cover;
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    bottom: 0px;
-    left: 0px;
-    opacity: 0.25;
-}
-
-body {
-    background-color: #81C0B5;
+    background-color: rgba(129, 192, 181, .6);
 }
 
 
@@ -38,35 +22,37 @@ body {
     height: 10vh;
     padding: 10px;
     color: #F7EBC3;
+    font-family: 'Spartan', sans-serif;
     background-color: #280607;
 }
 
 .site-title {
-    font-family: 'Spartan', sans-serif;
     font-size: xx-large;
-}
-
-.page-title {
-    font-family: 'Spartan', sans-serif;
+    text-transform: uppercase;
 }
 
 
 /* MAIN CONTENT */
 
-#main-section {
+.main-section {
+    height: fit-content;
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+
+.text-box {
     width: 90%;
-    margin: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    margin-left: auto;
     display: block;
-    padding-top: 40px;
-    padding-right: 10px;
-    padding-bottom: 40px;
-    padding-left: 10px;
+    padding: 40px 20px 40px 20px;
     background-color: rgba(255, 255, 255, .5);
 }
 
-#empty-div {
-    height: 40px;
-    width: 100%;
+.contact-section {
+    height: 85vh;
+    text-align: center;
 }
 
 
