@@ -5,12 +5,13 @@
 }
 
 
-/* Page Heading Styles - Title of the Website */
+/* SITE TITLE STYLES */
 
-.page-heading {
+.site-title {
     font-family: 'Spartan', sans-serif;
     color: #F7EBC3;
     font-size: xx-large;
+    text-transform: uppercase;
     background-color: #280607;
     padding: 10px;
     position: sticky;
@@ -20,9 +21,9 @@
 }
 
 
-/* Navigation Styles */
+/* NAVIGATION STYLES */
 
-.list {
+.nav {
     list-style: none;
     display: flex;
     flex-direction: row;
@@ -31,14 +32,14 @@
     padding: 10px;
 }
 
-.list-item {
+.nav-link {
     font-family: 'Spartan', sans-serif;
     text-decoration: none;
     color: #F7EBC3;
     padding: 10px;
 }
 
-.list-item:hover {
+.nav-link:hover {
     color: #F9FC9D;
 }
 

@@ -13,16 +13,13 @@
     height: 10vh;
     padding: 10px;
     color: #F7EBC3;
+    font-family: 'Spartan', sans-serif;
     background-color: #280607;
 }
 
 .site-title {
-    font-family: 'Spartan', sans-serif;
     font-size: xx-large;
-}
-
-.page-title {
-    font-family: 'Spartan', sans-serif;
+    text-transform: uppercase;
 }
 
 
@@ -32,8 +29,9 @@
     font-family: 'Spartan', sans-serif;
     color: #280607;
     font-weight: bolder;
-    padding-top: 20px;
-    padding-left: 10px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    margin-top: 100px;
 }
 
 
@@ -64,11 +62,10 @@
     color: #280607;
     font-weight: bolder;
     width: fit-content;
-    padding-top: 20px;
+    padding-top: 30px;
     padding-right: 30px;
     text-decoration: none;
     align-self: flex-end;
-    z-index: 3;
 }
 
 .to-top:hover {
@@ -78,8 +75,12 @@
 
 /* MAIN CONTENT */
 
+.main-section {
+    height: fit-content;
+    padding-bottom: 100px;
+}
 
-/*#main-section {
+.text-box {
     width: 90%;
     margin: auto;
     display: block;
@@ -90,10 +91,10 @@
     background-color: rgba(255, 255, 255, .5);
 }
 
-#empty-div {
-    height: 40px;
-    width: 100%;
-}*/
+.content-section {
+    display: flex;
+    flex-direction: column;
+}
 
 
 /* LARGE IMAGE STYLES */
@@ -101,6 +102,7 @@
 .img-container {
     display: flex;
     justify-content: center;
+    padding-top: 30px;
 }
 
 #image {
@@ -115,20 +117,6 @@
     background-size: cover;
     background-color: rgba(129, 192, 181, .6);
 }
-
-
-/*#background-image::before {
-    content: "";
-    background-image: url("oceanBackground.jpg");
-    background-size: cover;
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    bottom: 0px;
-    left: 0px;
-    opacity: 0.25;
-    z-index: 1;
-} */
 
 
 /* FOOT NAVIGATION STYLES */
