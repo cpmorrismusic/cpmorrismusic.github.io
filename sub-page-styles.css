@@ -55,6 +55,15 @@
     text-align: center;
 }
 
+.gallery-section {
+    background-color: #81C0B5;
+    height: 100vh;
+}
+
+.resources-section {
+    text-align: center;
+}
+
 
 /* FOOT NAVIGATION STYLES */
 
