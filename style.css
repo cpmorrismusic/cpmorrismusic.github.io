@@ -25,12 +25,21 @@ html {
     font-size: 1.25rem;
 }
 
+
+/* REMEMBER TO CHANGE BACKGORUND COLOR BACK ONCE
+PICTURES ARE RESPONDING CORRECTLY */
+
 main {
-    background-color: #280607;
+    background-color: lightpink;
 }
 
 
 /* --- HEADER AND NAVIGATION STYLES --- */
+
+
+/* INVESTIGATE WHY NAV-BAR IS NOT ADJUSTING
+THE WAY I WANT, YET FOOT-NAV IS FINE ON BOTH HOME
+PAGE AND CONTACT PAGE.*/
 
 .header {
     padding: 1rem;
@@ -40,30 +49,49 @@ main {
     font-size: 3rem;
 }
 
-.nav {
-    display: flex;
-    justify-content: space-evenly;
+.nav-bar {
     list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    height: fit-content;
+    font-size: 1.5rem;
 }
 
-.bar {
-    padding-top: 2rem;
-    padding-bottom: 1rem;
-}
-
-.footer {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+.foot-nav {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    height: fit-content;
+    font-size: 1rem;
+    padding: 1.5rem;
 }
 
 .nav-link {
-    font-size: 1.5rem;
     text-decoration: none;
     font-weight: bold;
+    margin: 1.5rem;
 }
 
 .nav-link:hover {
     color: #F9FC9D;
+}
+
+@media (max-width: 1200px) {
+    .foot-nav {
+        justify-content: left;
+    }
+}
+
+@media (max-width: 1400px) {
+    .nav-bar {
+        justify-content: left;
+    }
 }
 
 
@@ -78,9 +106,15 @@ main {
     background-position: center center;
 }
 
+
+/* NOTES FOR NEXT TIME: TRY PUTTING IN THE IMGs AS
+ACTUAL IMGs, INSTEAD OF BACKGROUNDS.
+MIN-WIDTH NOT WORKING - OVERFLOW: HIDDEN NOT WORKING*/
+
 #ocean {
     background-image: url("oceanBackground.jpg");
     height: 60vh;
+    min-width: 462px;
 }
 
 #rome {
@@ -97,15 +131,15 @@ main {
 /* AUDIO STYLES */
 
 .audio-container {
-    height: 120%;
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
-    padding-right: 2rem;
+    height: 60vh;
 }
 
 .audio-controls {
     width: 20%;
+    min-width: 167px;
     outline: .2rem solid #280607;
     outline-offset: 1rem;
 }
