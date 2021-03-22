@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+
+/* --- UNIVERSAL TEXT AND COLOR STYLES --- */
+
+.light-text {
+    color: #F7EBC3;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    background-color: #280607;
+}
+
+.main {
+    background-color: #81C0B5;
+}
+
+
+/* SITE TITLES STYLES */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    height: fit-content;
+    padding: 1rem;
+}
+
+.site-title {
+    font-size: 2.5rem;
+}
+
+.page-title {
+    font-size: 2rem;
+}
+
+@media (max-width: 950px) {
+    .header {
+        flex-direction: column;
+    }
+}
+
+
+/* MAIN CONTENT */
+
+.main-section {
+    height: fit-content;
+}
+
+.text-box {
+    margin-right: 6rem;
+    margin-left: 6rem;
+    padding: 3rem 2rem 2rem 2rem;
+    background-color: rgba(255, 255, 255, .5);
+    text-align: center;
+}
+
+.img-box {
+    background-color: rgba(255, 255, 255, .5);
+    margin-right: 6rem;
+    margin-left: 6rem;
+}
+
+.img {
+    display: block;
+    width: 60%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 2rem;
+    padding-bottom: 6rem;
+    filter: grayscale(25%);
+}
+
+
+/* FOOT NAVIGATION STYLES */
+
+.foot-nav {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: fit-content;
+    padding: 1.5rem;
+}
+
+.foot-link {
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 1.5rem;
+}
+
+.foot-link:hover {
+    color: #F9FC9D;
+}
+
+@media (max-width: 1200px) {
+    .foot-nav {
+        justify-content: left;
+    }
+}
+
+
+/* Colors used throughout site:
+dark blue green: #0B6570
+black/dark navy: #280607
+blue sage: #81C0B5
+transparent blue sage: rgba(129, 192, 181, .6)
+sage: #B4D2BA
+cream: #F7EBC3
+highlighted link: #F9FC9D
+transparent white: rgba(255, 255, 255, .5); */
