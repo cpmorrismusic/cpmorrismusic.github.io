@@ -121,6 +121,16 @@ html {
     font-family: 'Times New Roman', Times, serif;
 }
 
+.career-text-box {
+    margin-right: 6rem;
+    margin-left: 6rem;
+    padding: 3rem 2rem 2rem 2rem;
+    background-color: rgba(255, 255, 255, .5);
+    text-align: left;
+    font-size: 1.25rem;
+    font-family: 'Times New Roman', Times, serif;
+}
+
 .alt {
     background-color: rgba(255, 255, 255, 0.425);
 }
@@ -203,3 +213,110 @@ sage: #B4D2BA
 cream: #F7EBC3
 highlighted link: #F9FC9D
 transparent white: rgba(255, 255, 255, .5); */
+
+
+/* -- SPECIFIC SIDE PAGE ELEMENT STYLES;
+MUSIC LIBRARY TABLE AND GALLERY -- */
+
+
+/* TABLE STYLES */
+
+.table {
+    width: 90%;
+    object-fit: center;
+    margin: 30px auto 10px auto;
+    border: solid 2px #280607;
+    z-index: 2;
+}
+
+.heading {
+    background-color: #280607;
+    color: #F7EBC3;
+    font-family: 'Spartan', sans-serif;
+    font-weight: 500;
+}
+
+.item {
+    background-color: rgba(255, 255, 255, .5);
+}
+
+.cell {
+    border: solid 2px #280607;
+    text-align: center;
+    padding: 5px;
+}
+
+.controls {
+    height: 25px;
+    width: 250px;
+}
+
+
+/* GALLERY
+CSS and HTML inspired by gallery created here:
+https://codepen.io/heyDante/pen/bxEYOw */
+
+.gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.gallery-image img {
+    height: 25rem;
+    width: 35rem;
+    transform: scale(1.0);
+    transition: transform 0.4s ease;
+}
+
+#img-one {
+    width: 35rem;
+}
+
+.image-box {
+    box-sizing: content-box;
+    margin: 2rem;
+    height: 25rem;
+    width: 35rem;
+    overflow: hidden;
+    display: inline-block;
+    color: white;
+    position: relative;
+    outline: solid .1rem #280607;
+    outline-offset: .5rem;
+}
+
+.caption {
+    position: absolute;
+    bottom: .5rem;
+    left: 1rem;
+    opacity: 0;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.transparent-box {
+    height: 25rem;
+    width: 35rem;
+    background-color: rgba(0, 0, 0, 0);
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: background-color 0.3s ease;
+}
+
+.image-box:hover img {
+    transform: scale(1.1);
+}
+
+.image-box:hover .transparent-box {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.image-box:hover .caption {
+    transform: translateY(-20px);
+    opacity: 1.0;
+}
+
+.caption>p:nth-child(2) {
+    font-size: 1rem;
+}

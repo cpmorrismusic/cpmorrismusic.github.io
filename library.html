@@ -4,40 +4,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="dl.css">
+    <link rel="stylesheet" href="sub-style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@100;500&display=swap" rel="stylesheet">
     <title>Digital Music Library</title>
 </head>
 
-<body>
+<body class="main">
     <header>
-        <div id="top" class="titles">
+        <div class="header light-text">
             <h1 class="site-title">Christopher Morris Music</h1>
             <h2 class="page-title">Digital Music Library</h2>
         </div>
         <nav>
-            <ul class="sub-nav">
-                <li><a class="page-link" href="#audio-files">Audio Files</a></li>
-                <li><a class="page-link" href="#program-notes">Program Notes</a></li>
-                <li><a class="page-link" href="#works">Works</a></li>
+            <ul class="sub-nav light-text">
+                <li><a class="page-link light-text" href="#audio-files">Audio Files</a></li>
+                <li><a class="page-link light-text" href="#program-notes">Program Notes</a></li>
+                <li><a class="page-link light-text" href="#works">Works</a></li>
             </ul>
         </nav>
     </header>
 
 
 
-    <main>
-        <section class="main-section">
+    <main class="bottom-margin">
+        <section>
             <h3 id="audio-files" class="sub-heading">Audio Files</h3>
             <table class="table">
                 <tr>
-                    <th class="cell header">Play Piece</th>
-                    <th class="cell header">Performers</th>
-                    <th class="cell header">Title</th>
-                    <th class="cell header">Date</th>
-                    <th class="cell header">Duration</th>
-                    <th class="cell header">Additional Information</th>
+                    <th class="cell heading">Play Piece</th>
+                    <th class="cell heading">Performers</th>
+                    <th class="cell heading">Title</th>
+                    <th class="cell heading">Date</th>
+                    <th class="cell heading">Duration</th>
+                    <th class="cell heading">Additional Information</th>
                 </tr>
                 <tr>
                     <td class="cell item"><audio class="controls" src="19 - Track 19.mp3" type="audio/mp3" controls></audio></td>
@@ -80,7 +80,9 @@
                     <td class="cell item">Reording at New England Conservatory of Music.</td>
                 </tr>
             </table>
-            <a class="to-top" href="#top">Top</a>
+            <div class="flex-wrap">
+                <a class="top" href="#top">Top</a>
+            </div>
         </section>
 
         <section class="main-section">
@@ -108,23 +110,27 @@
                 <br />
                 <p><em>Impressions of Detroit</em> is dedicated to the composer’s father, who worked as a church organist his entire life.</p>
             </article>
-            <a class="to-top" href="#top">Top</a>
+            <div class="flex-wrap">
+                <a class="top" href="#top">Top</a>
+            </div>
         </section>
 
         <section class="main-section">
             <h3 id="works" class="sub-heading">Works: Sheet Music Available for Download</h3>
-            <a class="to-top" href="#top">Top</a>
+            <div class="flex-wrap">
+                <a class="top" href="#top">Top</a>
+            </div>
         </section>
     </main>
 
     <footer>
-        <ul class="foot-nav">
-            <li><a class="foot-link" href="career.html">Career & Education</a></li>
-            <li><a class="foot-link" href="contact.html">Contact</a></li>
-            <li><a class="foot-link" href="library.html">Digital Music Library</a></li>
-            <li> <a class="foot-link" href="gallery.html">Gallery</a></li>
-            <li><a class="foot-link" href="resources.html">Student Resources</a></li>
-            <li><a class="foot-link" href="index.html">Return to Home</a></li>
+        <ul class="foot-nav light-text">
+            <li><a class="foot-link light-text" href="career.html">Career & Education</a></li>
+            <li><a class="foot-link light-text" href="contact.html">Contact</a></li>
+            <li><a class="foot-link light-text" href="library.html">Digital Music Library</a></li>
+            <li> <a class="foot-link light-text" href="gallery.html">Gallery</a></li>
+            <li><a class="foot-link light-text" href="resources.html">Student Resources</a></li>
+            <li><a class="foot-link light-text" href="index.html">Return to Home</a></li>
         </ul>
     </footer>
 
