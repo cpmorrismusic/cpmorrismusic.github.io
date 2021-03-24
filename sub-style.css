@@ -159,6 +159,11 @@ html {
     padding-top: 5rem;
 }
 
+#info {
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+}
+
 .bottom-margin {
     margin-bottom: 8rem;
 }
@@ -167,6 +172,27 @@ html {
     .bottom-margin {
         margin-bottom: 10rem;
     }
+}
+
+
+/* FORM STYLES */
+
+#email {
+    width: 15rem;
+    padding: .25rem;
+    font-style: italic;
+    margin: .5rem;
+}
+
+#submit {
+    width: 5rem;
+    padding: .25rem;
+    margin: .25rem;
+}
+
+.list {
+    list-style: none;
+    text-decoration: underline;
 }
 
 
@@ -244,6 +270,10 @@ MUSIC LIBRARY TABLE AND GALLERY -- */
     border: solid 2px #280607;
     text-align: center;
     padding: 5px;
+}
+
+.title {
+    font-style: italic;
 }
 
 .controls {
