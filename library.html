@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="sub-style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@100;500&display=swap" rel="stylesheet">
+    <script src="script.js"></script>
     <title>Digital Music Library</title>
 </head>
 
@@ -28,9 +29,9 @@
 
 
     <main class="bottom-margin">
-        <h3 class="sub-heading">About Dr. Morris' Works</h3>
+        <h3 class="sub-heading">About the music</h3>
         <article id="info" class="text-box alt">
-            <p>Dr. Christopher Morris has had original compositions performed in Boston and greater Boston, Massachusetts, Portland, Maine, Detroit, Michigan, Chicago, Illinois, Rome, Italy, Paris, France and Dusseldorf, Germany. He studied composition with
+            <p>Christopher Morris has had original compositions performed in Boston and greater Boston, Massachusetts, Portland, Maine, Detroit, Michigan, Chicago, Illinois, Rome, Italy, Paris, France and Dusseldorf, Germany. He studied composition with
                 Paul Lansky (Merrywood Music School, Lenox, Massachusetts), English Composers Justin Connolly (Lenox, Massachusetts) and Alexander Goehr (New England Conservatory). He was a student for five years with Robert DiDomenica (New England Conservatory).
                 He also studied with M. William Karlins while pursuing his doctorate in music (Northwestern University School of Music).</p>
             <br />
@@ -151,35 +152,35 @@
 
             <article class="text-box alt">
                 <form>
-                    <label for="email">Please enter your email before downloading a PDF:</label>
+                    <p>Please enter your email. Then, click on the works for which you would like to download. PDFs will open in a new tab.</p>
+                    <br />
+                    <label for="email">Email:</label>
                     <input type="email" name="email" id="email" pattern="^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$" placeholder="example@example.com" required>
-                    <input type="submit" id="submit" value="Submit">
-
                 </form>
             </article>
 
             <article class="text-box">
-                <p>Click on work title to open PDF and download:</p>
-                <br />
-                <ul class="list">
-                    <li><a class="page-link" href="Sojourn for FlglHn Pno.pdf" target="_blank">Sojourn for Flugelhorn</a></li>
+                <ul class="list ">
+                    <li><button class="button" type="button" name="sojourn" onclick="download('Sojourn for FlglHn Pno.pdf')">Sojourn for Flugelhorn and Piano</button></li>
+                    <li><button class="button" type="button" name="test-one" onclick="download('Test one')">Test One</button></li>
+                    <li><button class="button" type="button" name="test-two" onclick="download('Test two')">Test Two</button></li>
                 </ul>
             </article>
 
-            <div class="flex-wrap">
-                <a class="top" href="#top">Top</a>
+            <div class="flex-wrap ">
+                <a class="top " href="#top ">Top</a>
             </div>
         </section>
     </main>
 
     <footer>
-        <ul class="foot-nav light-text">
-            <li><a class="foot-link light-text" href="career.html">Career & Education</a></li>
-            <li><a class="foot-link light-text" href="contact.html">Contact</a></li>
-            <li><a class="foot-link light-text" href="library.html">Digital Music Library</a></li>
-            <li> <a class="foot-link light-text" href="gallery.html">Gallery</a></li>
-            <li><a class="foot-link light-text" href="resources.html">Student Resources</a></li>
-            <li><a class="foot-link light-text" href="index.html">Return to Home</a></li>
+        <ul class="foot-nav light-text ">
+            <li><a class="foot-link light-text " href="career.html ">Career & Education</a></li>
+            <li><a class="foot-link light-text " href="contact.html ">Contact</a></li>
+            <li><a class="foot-link light-text " href="library.html ">Digital Music Library</a></li>
+            <li> <a class="foot-link light-text " href="gallery.html ">Gallery</a></li>
+            <li><a class="foot-link light-text " href="resources.html ">Student Resources</a></li>
+            <li><a class="foot-link light-text " href="index.html ">Return to Home</a></li>
         </ul>
     </footer>
 
@@ -188,4 +189,4 @@
 
 </html>
 
-<!--Use class="test" to make tests on the site. There is a comment on the corresponding CSS file.-->
+<!--Use class="test " to make tests on the site. There is a comment on the corresponding CSS file.-->

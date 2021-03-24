@@ -121,6 +121,10 @@ html {
     font-family: 'Times New Roman', Times, serif;
 }
 
+.hidden {
+    display: none;
+}
+
 .career-text-box {
     margin-right: 6rem;
     margin-left: 6rem;
@@ -181,13 +185,26 @@ html {
     width: 15rem;
     padding: .25rem;
     font-style: italic;
-    margin: .5rem;
+    margin-top: 1rem;
+    margin-left: .5rem;
 }
 
-#submit {
-    width: 5rem;
-    padding: .25rem;
-    margin: .25rem;
+.button {
+    width: 50%;
+    margin: 2.5rem;
+    font-size: 1rem;
+    padding-top: .75rem;
+    padding-bottom: .75rem;
+    background-color: #270708;
+    color: #F7EBC3;
+    font-family: 'Spartan', sans-serif;
+    border: none;
+    outline: solid .1rem #280607;
+    outline-offset: 1rem;
+}
+
+.button:hover {
+    color: #F9FC9D;
 }
 
 .list {
