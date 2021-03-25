@@ -1,0 +1,40 @@
+const wrapper = document.querySelector('.wrapper');
+const form = wrapper.querySelectorAll('.form');
+const submitInput = form[0].querySelector('input[type="submit"]');
+
+function getDataForm(e) {
+    e.preventDefault();
+    var formData = new FormData(form[0]);
+    alert(formData.get('nameField') + ' - ' + formData.get('emailField'))
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+    submitInput.addEventListener('click', getDataForm, false);
+
+}, false)
+
+
+
+
+
+
+
+
+var button = document.querySelectorAll("button");
+button.disabled = true;
+
+
+function validateEmail(mail) {
+    if (/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/.test(form.emailField.value)) {
+        button.disabled = false;
+
+    } else {
+        alert("Please enter a valid email address. Thank you!");
+    }
+}
+
+function download(str) {
+    if (button.disabled == 0) {
+        window.open(str);
+    }
+}

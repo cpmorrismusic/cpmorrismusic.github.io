@@ -150,22 +150,27 @@
         <section class="main-section">
             <h3 id="works" class="sub-heading">Works: Sheet Music Available for Download</h3>
 
-            <article class="text-box alt">
-                <form name="form" onsubmit="return false">
+            <article class="text-box alt wrapper">
+                <form class="form" name="form" onsubmit="return false">
                     <p>Please enter your name and email. Then, click on the works for which you would like to download. PDFs will open in a new tab.</p>
+
                     <br />
-                    <label for="name">Name:</label>
-                    <input type="text" name="name" id="name" placeholder="Enter Name" required>
+
+                    <label for="name" id="nameField">Name:</label>
+                    <input type="text" name="nameField" id="name" placeholder="Enter Name" required>
+
                     <br />
-                    <label for="email">Email:</label>
-                    <input type="email" name="email" id="email" pattern="^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$" placeholder="example@mail.com" required>
-                    <input type="submit" id="submit" value="Submit" onclick="validateEmail(document.form.email)">
+
+                    <label for="email" id="emailField">Email:</label>
+                    <input type="email" name="emailField" id="email" pattern="^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$" placeholder="example@mail.com" required>
+
+                    <input type="submit" name="submit" id="submit" value="Submit">
                 </form>
             </article>
 
             <article class="text-box">
                 <ul class="list ">
-                    <li><button class="button" type="button" name="sojourn" onclick="download('Sojourn for FlglHn Pno.pdf')">Sojourn for Flugelhorn and Piano</button></li>
+                    <li><button class="button" type="button" name="sojournFlgHnPno" onclick="download('Sojourn for FlglHn Pno.pdf')">Sojourn for Flugelhorn and Piano</button></li>
                 </ul>
             </article>
 

@@ -1,18 +1,14 @@
-var button = document.querySelectorAll("button");
-button.disabled = true;
+var $form = $('form#test-form'),
+    url = 'https://script.google.com/macros/s/AKfycbx6w2H2B8IafDlNvKhTJKONOH-cOQf61GpiD_ACqDL9bmvr2lCwVhSljrYbBKW990v3HQ/exec'
 
-
-function validateEmail(mail) {
-    if (/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/.test(form.email.value)) {
-        button.disabled = false;
-
-    } else {
-        alert("Please enter a valid email address. Thank you!");
-    }
-}
-
-function download(str) {
-    if (button.disabled == 0) {
-        window.open(str);
-    }
-}
+$('#submit-form').on('click', function(e) {
+    e.preventDefault();
+    var jqxhr = $.ajax({
+        url: url,
+        method: "GET",
+        dataType: "json",
+        data: $form.serializeObject()
+    }).success(
+        // do something
+    );
+})
