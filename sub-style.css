@@ -181,7 +181,8 @@ html {
 
 /* FORM STYLES */
 
-#email {
+#email,
+#name {
     width: 15rem;
     padding: .25rem;
     font-style: italic;
@@ -205,6 +206,11 @@ html {
 
 .button:hover {
     color: #F9FC9D;
+}
+
+#submit {
+    width: 5rem;
+    padding: .25rem;
 }
 
 .list {

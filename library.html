@@ -151,19 +151,21 @@
             <h3 id="works" class="sub-heading">Works: Sheet Music Available for Download</h3>
 
             <article class="text-box alt">
-                <form>
-                    <p>Please enter your email. Then, click on the works for which you would like to download. PDFs will open in a new tab.</p>
+                <form name="form" onsubmit="return false">
+                    <p>Please enter your name and email. Then, click on the works for which you would like to download. PDFs will open in a new tab.</p>
+                    <br />
+                    <label for="name">Name:</label>
+                    <input type="text" name="name" id="name" placeholder="Enter Name" required>
                     <br />
                     <label for="email">Email:</label>
-                    <input type="email" name="email" id="email" pattern="^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$" placeholder="example@example.com" required>
+                    <input type="email" name="email" id="email" pattern="^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$" placeholder="example@mail.com" required>
+                    <input type="submit" id="submit" value="Submit" onclick="validateEmail(document.form.email)">
                 </form>
             </article>
 
             <article class="text-box">
                 <ul class="list ">
                     <li><button class="button" type="button" name="sojourn" onclick="download('Sojourn for FlglHn Pno.pdf')">Sojourn for Flugelhorn and Piano</button></li>
-                    <li><button class="button" type="button" name="test-one" onclick="download('Test one')">Test One</button></li>
-                    <li><button class="button" type="button" name="test-two" onclick="download('Test two')">Test Two</button></li>
                 </ul>
             </article>
 
@@ -189,4 +191,10 @@
 
 </html>
 
-<!--Use class="test " to make tests on the site. There is a comment on the corresponding CSS file.-->
+<!--Use class="test " to make tests on the site. There is a comment on the corresponding CSS file.
+
+
+
+<li><button class="button" type="button" name="test-one" onclick="download('Test one')">Test One</button></li>
+                    <li><button class="button" type="button" name="test-two" onclick="download('Test two')">Test Two</button></li>
+                -->
