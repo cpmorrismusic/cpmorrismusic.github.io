@@ -1,3 +1,5 @@
+/* UNIVERSAL STYLES */
+
 * {
     padding: 0;
     margin: 0;
@@ -5,194 +7,313 @@
 }
 
 html {
-    font-size: 16px;
+    font-size: 18px;
+}
+
+:root {
+    --background: rgb(23, 4, 9);
+    --aqua: #81C0B5;
+    --color: #F7EBC3;
+    --hover: #F9FC9D;
+    --font: 'Spartan', sans-serif;
+    --text: Georgia, 'Times New Roman', serif;
+}
+
+body {
+    background-color: var(--background);
 }
 
 
-/* --- UNIVERSAL TEXT AND COLOR STYLES --- */
+/* NAVIGATION STYLES */
 
-.light-text {
-    color: #F7EBC3;
-    font-family: 'Spartan', sans-serif;
-    text-transform: uppercase;
-    background-color: #280607;
-}
-
-.dark-text {
-    color: #280607;
-    font-family: 'Times New Roman', Times, serif;
-    background-color: #81C0B5;
-    font-size: 1.25rem;
-}
-
-main {
-    background-color: lightpink;
-}
-
-
-/* --- HEADER AND NAVIGATION STYLES --- */
-
-
-/* INVESTIGATE WHY NAV-BAR IS NOT ADJUSTING
-THE WAY I WANT, YET FOOT-NAV IS FINE ON BOTH HOME
-PAGE AND CONTACT PAGE.*/
-
-.header {
-    padding: 1rem;
+header {
+    background: var(--background);
+    position: fixed;
+    z-index: 999;
+    width: 100%;
 }
 
 .site-title {
-    font-size: 3rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+    text-transform: uppercase;
+    color: var(--color);
+    font-family: var(--font);
+    text-align: left;
 }
 
-.nav-bar {
-    list-style: none;
+.nav-toggle {
+    display: none;
+}
+
+.nav-toggle-label {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    margin-right: 1rem;
+    padding-bottom: 1rem;
+    height: 50%;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap;
-    height: fit-content;
-    padding: 1.5rem;
-    font-size: 1.5rem;
 }
 
-.foot-nav {
+.nav-toggle-label span,
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
+    display: block;
+    background: var(--hover);
+    height: 2px;
+    width: 2rem;
+    border-radius: 2px;
+    position: relative;
+}
+
+.nav-toggle-label span::before,
+.nav-toggle-label span::after {
+    content: '';
+    position: absolute;
+}
+
+.nav-toggle-label span::before {
+    bottom: 7px;
+}
+
+.nav-toggle-label span::after {
+    top: 7px;
+}
+
+nav {
+    position: absolute;
+    text-align: right;
+    top: 100%;
+    right: 0;
+    background: var(--background);
+    width: 100%;
+    transform: scale(1, 0);
+    transform-origin: top;
+    transition: transform 450ms ease-in;
+}
+
+nav ul {
     list-style: none;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    align-items: center;
 }
 
-.nav-link {
+nav li {
+    margin-bottom: 1rem;
+    margin-right: 1rem;
+}
+
+nav a {
+    color: var(--color);
     text-decoration: none;
-    font-weight: bold;
-    margin: 1rem;
+    font-size: 1rem;
+    font-family: var(--font);
+    text-transform: uppercase;
+    opacity: 0;
+    transition: opacity 150ms ease-in;
 }
 
-.foot-link {
-    text-decoration: none;
-    font-weight: bold;
+nav a:hover {
+    color: var(--hover);
 }
 
-.nav-link:hover {
-    color: #F9FC9D;
+nav a:focus {
+    outline: .1rem solid var(--color);
 }
 
-@media (max-width: 1400px) {
-    .nav-bar {
-        justify-content: left;
+.nav-toggle:checked~nav {
+    transform: scale(1, 1);
+}
+
+.nav-toggle:checked~nav a {
+    opacity: 1;
+    transition: opacity 250ms ease-in 250ms;
+}
+
+@media screen and (min-width: 1095px) {
+    .nav-toggle-label {
+        display: none;
+    }
+    header {
+        display: flex;
+        flex-direction: column;
+    }
+    .site-title {
+        padding-bottom: 2rem;
+    }
+    nav {
+        all: unset;
+    }
+    nav ul {
+        display: flex;
+        justify-content: space-evenly;
+    }
+    nav a {
+        opacity: 1;
+        position: relative;
+    }
+    nav a::before {
+        content: '';
+        display: block;
+        height: 3.5px;
+        background: var(--hover);
+        position: absolute;
+        bottom: -.50rem;
+        left: 0;
+        right: 0;
+        transform: scale(0, 1);
+        transition: transform ease-in-out 250ms;
+    }
+    nav a:hover::before {
+        transform: scale(1, 1);
+    }
+}
+
+@media (max-width: 695px) {
+    .site-title {
+        max-width: 75%;
     }
 }
 
 
-/* --- MAIN CONTENT --- */
-
-
-/* IMAGES STYLES */
+/* IMG STYLES */
 
 .bg-img {
-    background-repeat: no-repeat;
-    background-size: 100%;
-    background-position: center center;
-}
-
-
-/* NOTES FOR NEXT TIME: TRY PUTTING IN THE IMGs AS
-ACTUAL IMGs, INSTEAD OF BACKGROUNDS.
-MIN-WIDTH NOT WORKING - OVERFLOW: HIDDEN NOT WORKING*/
-
-#ocean {
+    height: 90vh;
     background-image: url("oceanBackground.jpg");
-    height: 60vh;
-    min-width: 462px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-#rome {
-    background-image: url("Rome.jpg");
-    filter: grayscale(100%);
-    border-top: .5rem solid #280607;
+h2 {
+    outline: solid .15rem var(--background);
+    outline-offset: 1rem;
 }
 
-.wrap {
-    height: 80vh;
+.rome {
+    width: 100%;
+    height: 800px;
+    object-fit: cover;
+    object-position: center right;
+    filter: grayscale(85%);
+    border-top: solid .25rem var(--background);
 }
 
 
 /* AUDIO STYLES */
 
-.audio-container {
+.audio {
+    height: 2rem;
+    width: 25%;
+    min-width: 217.25px;
+}
+
+.frost {
+    background-color: rgba(255, 255, 255, .15);
+    backdrop-filter: blur(5px);
+    height: 4rem;
+    width: 27.4%;
+    min-width: 300px;
+    position: absolute;
+    outline: solid .15rem var(--background);
+}
+
+
+/* TESTIMONIALS SECTION STYLES */
+
+.sub-heading {
+    display: none;
+}
+
+.content-box {
+    background-color: var(--aqua);
+    height: fit-content;
+    padding: 2%;
+    text-align: center;
+    font-size: 1rem;
+    font-family: var(--text);
+    display: none;
+}
+
+.sub-heading-label-b {
+    display: none;
+}
+
+.sub-heading:checked~.content-box {
+    display: block;
+}
+
+.sub-heading:checked~.sub-heading-label-b {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 60vh;
 }
 
-.audio-controls {
-    width: 20%;
-    min-width: 167px;
-    outline: .2rem solid #280607;
+.label-format {
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+    color: var(--color);
+    font-family: var(--font);
+    font-size: 1.75rem;
+    text-transform: uppercase;
+}
+
+.label-format-b {
+    margin-bottom: 1rem;
+    color: var(--color);
+    font-family: var(--font);
+    font-size: 1.25rem;
+    text-transform: uppercase;
+}
+
+.label-format:hover {
+    color: var(--hover);
+    cursor: pointer;
+}
+
+.label-format:focus {
+    outline: .1rem solid var(--color);
+}
+
+.label-format-b:hover {
+    color: var(--hover);
+    cursor: pointer;
+}
+
+.label-format-b:focus {
+    outline: .1rem solid var(--color);
+}
+
+.empty-div {
+    background-color: var(--background);
+    height: 1rem;
+    width: 100%;
+}
+
+.margins {
+    padding: 2rem;
+    background-color: rgba(255, 255, 255, .5);
+    outline: solid .15rem var(--background);
     outline-offset: 1rem;
 }
 
-
-/* TESTIMONIAL HEADING AND BOX STYLES */
-
-.testimonial-heading {
-    padding: 1rem;
-    color: #F9FC9D;
+.p-alt {
+    font-family: var(--font);
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: .75rem;
 }
 
-#testimonials-box {
-    padding: 2rem 5rem 2rem 5rem;
-    height: 20vh;
-    text-align: center;
-    overflow: hidden;
-    transition-property: all;
-    transition-duration: 700ms;
-    transition-timing-function: ease;
+.highlight {
+    font-style: italic;
 }
 
-@media (max-width: 400px) {
-    #testimonials-box:hover {
-        height: 325vh;
-    }
-}
-
-@media (min-width: 500px) {
-    #testimonials-box:hover {
-        height: 235vh;
-    }
-}
-
-@media (min-width: 700px) {
-    #testimonials-box:hover {
-        height: 155vh;
-    }
-}
-
-@media (min-width: 1000px) {
-    #testimonials-box:hover {
-        height: 125vh;
-    }
-}
-
-@media (min-width: 1100px) {
-    #testimonials-box:hover {
-        height: 105vh;
-    }
-}
-
-@media (min-width: 1400px) {
-    #testimonials-box:hover {
-        height: 90vh;
-    }
-}
-
-@media (min-width: 1550px) {
-    #testimonials-box:hover {
-        height: 55vh;
-    }
+.hr {
+    width: 45%;
+    margin: .5rem auto 2rem auto;
 }

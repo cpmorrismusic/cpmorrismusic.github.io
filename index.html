@@ -8,82 +8,96 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@100;500&display=swap" rel="stylesheet">
+
     <title>Christopher Morris Music</title>
 </head>
 
 <body>
-    <header class="header light-text">
+    <header>
         <h1 class="site-title">Christopher Morris Music</h1>
+        <input type="checkbox" id="nav-toggle" class="nav-toggle">
         <nav>
-            <ul class="nav-bar">
-                <li><a class="nav-link light-text" href="career.html">Career & Education</a></li>
-                <li><a class="nav-link light-text" href="contact.html">Contact</a></li>
-                <li><a class="nav-link light-text" href="library.html">Digital Music Library</a></li>
-                <li><a class="nav-link light-text" href="gallery.html">Gallery</a></li>
-                <li><a class="nav-link light-text" href="resources.html">Student Resources</a></li>
+            <ul>
+                <li><a href="career.html">Career & Education</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="library.html">Digital Music Library</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="resources.html">Student Resources</a></li>
             </ul>
         </nav>
+        <label for="nav-toggle" class="nav-toggle-label">
+            <span></span>
+        </label>
     </header>
 
-    <main>
-        <div class="bg-img" id="ocean">
-            <div class="wrap">
-                <div class="audio-container">
-                    <audio class="audio-controls" src="homeAudio.mp3" type="audio/mp3" controls autoplay>Your browser does not support player.</audio>
-                </div>
+    <section class="bg-img">
+        <!--Background image is credited to Dids; sourced from Pexels.come-->
+        <div class="frost"></div>
+        <audio class="audio" autoplay controls preload="auto">
+            <source class="controls" src="homeAudio.mp3" type="audio/mp3">
+            Your browser does not support this audio.
+        </audio>
+    </section>
+
+    <article>
+        <div class="empty-div"></div>
+        <label for="sub-heading" class="sub-heading-label">
+            <span class="label-format">Testimonials &emsp; &#8659;</span>
+        </label>
+        <input type="checkbox" id="sub-heading" class="sub-heading">
+        <div class="content-box">
+            <div class="margins">
+                <p>"Dr. Morris is an <span class="highlight">inspirational mentor to young musicians</span>. He helps them see possibilities that they may not know exist. He guides his students as they pursue their dreams. He encourages them to take risks
+                    in their musicianship, because he believes in his students and knows that, if they put their minds to it, they can accomplish whatever they set out to do. And he is there to help, as needed, every step along the way."</p>
+                <br />
+                <p class="p-alt">Paul Rayius, Music Educator, State College, Pennsylvania</p>
+
+                <br />
+                <hr class="hr">
+                <br />
+
+                <p>"Christopher Morris is a man of artistic talents, he has <span class="highlight">skill, intelligence and imagination</span>."</p>
+                <br />
+                <p class="p-alt">Phyllis Curtin, International Soprano Soloist, Former Dean, Boston University School for Fine Arts</p>
+
+                <br />
+                <hr class="hr">
+                <br />
+
+                <p>"My own experiences with his music have left me feeling fulfilled as a performer. He has a <span class="highlight">gift for lyrical writing</span> and the craft to exploit it."</p>
+                <br />
+                <p class="p-alt">Fredric Cohen, International Oboist, Professor, University of Massachusetts Amherst</p>
+
+                <br />
+                <hr class="hr">
+                <br />
+
+                <p>"I find his compositions <span class="highlight">fresh and rewarding</span>, both to hear and to perform. I have commissioned him twice for Boston University concerts."</p>
+                <br />
+                <p class="p-alt">Sam Pilafian, International Solo Tubist</p>
+
+                <br />
+                <hr class="hr">
+                <br />
+
+                <p>"He is an excellent musician, very versatile, and has always maintained <span class="highlight">high quality of performance</span>."</p>
+                <br />
+                <p class="p-alt">Roger Voisin, Former Principal Trumpet, Boston Symphony Orchestra</p>
+
+                <br />
+                <hr class="hr">
             </div>
         </div>
+        <div class="empty-div"></div>
+        <label for="sub-heading" class="sub-heading-label-b">
+            <span class="label-format-b">Close</span>
+        </label>
+    </article>
 
-        <article>
-            <h2 class="light-text testimonial-heading">Testimonials &emsp; &#8659;</h2>
-            <div class="dark-text" id="testimonials-box">
-                <br />
-                <p>"Dr. Morris is an <strong>inspirational mentor to young musicians</strong>. He helps them see possibilities that they may not know exist. He guides his students as they pursue their dreams. He encourages them to take risks in their musicianship,
-                    because he believes in his students and knows that, if they put their minds to it, they can accomplish whatever they set out to do. And he is there to help, as needed, every step along the way."</p>
-                <p><strong>Paul Rayius, Music Educator, State College, Pennsylvania</strong></p>
+    <section>
+        <img class="rome" src="Rome.jpg" alt="Dr. Morris conducting the Massachusetts Youth Wind Emsemble in Rome, Italy.">
+    </section>
 
-                <br />
-                <br />
-
-                <p>"Christopher Morris is a man of artistic talents, he has <strong>skill, intelligence and imagination</strong>."</p>
-                <p><strong>Phyllis Curtin, International Soprano Soloist, Former Dean, Boston University School for Fine Arts</strong></p>
-
-                <br />
-                <br />
-
-                <p>"My own experiences with his music have left me feeling fulfilled as a performer. He has a <strong>gift for lyrical writing</strong> and the craft to exploit it."</p>
-                <p><strong>Fredric Cohen, International Oboist, Professor, University of Massachusetts Amherst</strong></p>
-
-                <br />
-                <br />
-
-                <p>"I find his compositions <strong>fresh and rewarding</strong>, both to hear and to perform. I have commissioned him twice for Boston University concerts."</p>
-                <p><strong>Sam Pilafian, International Solo Tubist</strong></p>
-
-                <br />
-                <br />
-
-                <p>"He is an excellent musician, very versatile, and has always maintained <em>high quality of performance</em>."</p>
-                <p><strong>Roger Voisin, Former Principal Trumpet, Boston Symphony Orchestra</strong></p>
-            </div>
-        </article>
-
-        <div class="bg-img" id="rome">
-            <div class="wrap"></div>
-        </div>
-    </main>
-
-    <footer>
-        <nav>
-            <ul class="foot-nav light-text">
-                <li><a class="foot-link light-text" href="career.html">Career & Education</a></li>
-                <li><a class="foot-link light-text" href="contact.html">Contact</a></li>
-                <li><a class="foot-link light-text" href="library.html">Digital Music Library</a></li>
-                <li><a class="foot-link light-text" href="gallery.html">Gallery</a></li>
-                <li><a class="foot-link light-text" href="resources.html">Student Resources</a></li>
-            </ul>
-        </nav>
-    </footer>
 
 </body>
 
