@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="sub-style.css">
+    <link rel="stylesheet" href="contact-sr.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@100;500&display=swap" rel="stylesheet">
     <title>Contact</title>
@@ -12,37 +12,47 @@
 
 <body>
 
-    <header class="header light-text">
-        <h1 class="site-title">Christopher Morris Music</h1>
-        <h2 class="page-title">Contact</h2>
+    <header>
+        <div class="flex-wrapper">
+            <h1 class="site-title">Christopher Morris Music</h1>
+            <h2 class="page-title">Contact</h2>
+        </div>
+        <input type="checkbox" id="nav-toggle" class="nav-toggle">
+        <nav>
+            <ul>
+                <li><a href="career.html">Career & Education</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="library.html">Digital Music Library</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="resources.html">Student Resources</a></li>
+                <li><a href="index.html">Home</a></li>
+            </ul>
+        </nav>
+        <label for="nav-toggle" class="nav-toggle-label">
+            <span></span>
+        </label>
     </header>
 
-    <main class="main">
-        <address class="text-box">
-        <p>If you have any questions, or would like to collaborate with Dr. Morris, <a href="mailto:cmorrismusic93@gmail.com">send him an email</a>.</p>
-        <p>For your records, Dr. Morris' email address is: <strong>cmorrismusic93@gmail.com</strong></p>
-        </address>
+    <main>
+        <div class="color-wrap">
+            <div class="text-box">
+                <p>If you have any questions, or would like to collaborate with Dr. Morris, please do not hesitate to reach out!</p>
+                <p>Send him an email at the following address:</p>
+                <p><strong>cmorrismusic93@gmail.com</strong></p>
+            </div>
 
-        <div class="text-box">
-            <p>Visit Dr. Morris' LinkedIn here.</p>
-            <p>For more information about VLACS - visit the site here.</p>
-        </div>
+            <div class="text-box">
+                <a class="link" href="https://www.linkedin.com/in/christopher-morris-0083b81a1/" target="_blank">Visit Dr. Morris' LinkedIn.</a>
+                <br />
+                <br />
+                <p>For more information about VLACS, <a class="link" href="https://vlacs.org/" target="blank">visit the site!</a></p>
+            </div>
 
-        <div class="img-box">
-            <img class="img" src="Peter and Chris.JPG">
+            <div class="img-box">
+                <img class="img" src="Peter and Chris.JPG">
+            </div>
         </div>
     </main>
-
-    <footer>
-        <ul class="foot-nav light-text">
-            <li><a class="foot-link light-text" href="career.html">Career & Education</a></li>
-            <li><a class="foot-link light-text" href="contact.html">Contact</a></li>
-            <li><a class="foot-link light-text" href="library.html">Digital Music Library</a></li>
-            <li> <a class="foot-link light-text" href="gallery.html">Gallery</a></li>
-            <li><a class="foot-link light-text" href="resources.html">Student Resources</a></li>
-            <li><a class="foot-link light-text" href="index.html">Return to Home</a></li>
-        </ul>
-    </footer>
 
 
 </body>

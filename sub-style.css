@@ -322,7 +322,7 @@ https://codepen.io/heyDante/pen/bxEYOw */
     transition: transform 0.4s ease;
 }
 
-#img-one {
+.img-width {
     width: 35rem;
 }
 
