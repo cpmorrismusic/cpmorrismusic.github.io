@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="test.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@100;500&display=swap" rel="stylesheet">
+    <script src="script.js"></script>
+    <title>Digital Music Library</title>
+</head>
+
+<body>
+    <header>
+        <div class="flex-wrapper">
+            <h1 class="site-title">Christopher Morris Music</h1>
+            <h2 class="page-title">Digital Music Library</h2>
+        </div>
+        <input type="checkbox" id="nav-toggle" class="nav-toggle">
+        <nav>
+            <ul>
+                <li><a href="career.html">Career & Education</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="library.html">Digital Music Library</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="resources.html">Student Resources</a></li>
+                <li><a href="index.html">Home</a></li>
+            </ul>
+        </nav>
+        <label for="nav-toggle" class="nav-toggle-label">
+            <span></span>
+        </label>
+    </header>
+
+
+
+    <main>
+        <div class="a-f-box">
+            <div class="wrap">
+                <p class="a-f">Audio Files</p>
+
+                <table class="table">
+                    <tr>
+                        <th class="cell heading">Play Piece</th>
+                        <th class="cell heading hidden-two">Title</th>
+                        <th class="cell heading hidden">Performers</th>
+                        <th class="cell heading hidden-two">Date</th>
+                        <th class="cell heading hidden">Duration</th>
+                        <th class="cell heading hidden">Additional Information</th>
+                    </tr>
+                    <tr>
+                        <td class="cell item"><audio class="controls" src="19 - Track 19.mp3" type="audio/mp3" controls></audio>
+                            <p class="h-title">Sojourn</p>
+                        </td>
+                        <td class="cell item title hidden-two">Sojourn</td>
+                        <td class="cell item hidden">Frank Düppenbecker (Flugelhorn), Klaus Eldert Müller (Piano)</td>
+                        <td class="cell item center hidden-two">2014</td>
+                        <td class="cell item center hidden">3:30</td>
+                        <td class="cell item hidden">Recording at St. Reinoldi Dortmund, Germany.</td>
+                    </tr>
+                    <tr>
+                        <td class="cell item"><audio class="controls" src="" type="audio/mp3" controls></audio>
+                            <p class="h-title">Impressions of Detroit, Movement 1 - Summit</p>
+                        </td>
+                        <td class="cell item title hidden-two">Impressions of Detroit, Movement 1 - Summit</td>
+                        <td class="cell item hidden">Bläserensemble Ratingen Director Frank Düppenbecker</td>
+                        <td class="cell item center hidden-two">2012</td>
+                        <td class="cell item center hidden">6:04</td>
+                        <td class="cell item hidden">Recording at Evangelische Friedenskirche Ratingen, Germany.</td>
+                    </tr>
+                    <tr>
+                        <td class="cell item"><audio class="controls" src="" type="audio/mp3" controls></audio>
+                            <p class="h-title">Impressions of Detroit, Movement 2 - The Corridor</p>
+                        </td>
+                        <td class="cell item title hidden-two">Impressions of Detroit, Movement 2 - The Corridor</td>
+                        <td class="cell item hidden">Bläserensemble Ratingen Director Frank Düppenbecker</td>
+                        <td class="cell item center hidden-two">2012</td>
+                        <td class="cell item center hidden">3:57</td>
+                        <td class="cell item hidden">Recording at Evangelische Friedenskirche Ratingen, Germany.</td>
+                    </tr>
+                    <tr>
+                        <td class="cell item"><audio class="controls" src="homeAudio.mp3" type="audio/mp3" controls></audio>
+                            <p class="h-title">Impressions of Detroit, Movement 3 - The Bridge</p>
+                        </td>
+                        <td class="cell item title hidden-two">Impressions of Detroit, Movement 3 - The Bridge</td>
+                        <td class="cell item hidden">Bläserensemble Ratingen Director Frank Düppenbecker</td>
+                        <td class="cell item center hidden-two">2012</td>
+                        <td class="cell item center hidden">4:12</td>
+                        <td class="cell item hidden">Recording at Evangelische Friedenskirche Ratingen, Germany. This is the piece featured on the main page of my site.</td>
+                    </tr>
+                    <tr>
+                        <td class="cell item"><audio class="controls" src="" type="audio/mp3" controls></audio>
+                            <p class="h-title">Four Etchings for Wind Ensemble</p>
+                        </td>
+                        <td class="cell item title hidden-two">Four Etchings for Wind Ensemble</td>
+                        <td class="cell item hidden">New England Conservatory Wind Ensemble, Christopher Morris conducting</td>
+                        <td class="cell item center hidden-two">1979</td>
+                        <td class="cell item center hidden">4:34</td>
+                        <td class="cell item hidden">Reording at New England Conservatory of Music.</td>
+                    </tr>
+                </table>
+
+                </table>
+
+            </div>
+        </div>
+
+
+        <div class="wrap-box">
+            <div class="wrap">
+                <p class="sub-title">Works: Sheet Music Available for Download</p>
+
+                <article class="bg-color">
+                    <form class="form" name="form" onsubmit="return false">
+                        <p>Please enter your name and email. Then, click on the works for which you would like to download. PDFs will open in a new tab.</p>
+                        <br />
+                        <label for="name" id="nameField">Name:</label>
+                        <input type="text" name="nameField" id="name" placeholder="Enter Name" required>
+                        <br />
+                        <label for="email" id="emailField">Email:</label>
+                        <input type="email" name="emailField" id="email" pattern="^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$" placeholder="example@mail.com" required>
+                        <br />
+                        <input type="submit" name="submit" id="submit" value="Submit">
+                    </form>
+                </article>
+
+                <div class="b-box">
+                    <ul class="list ">
+                        <li><button class="button" type="button" name="sojournFlgHnPno" onclick="download('Sojourn for FlglHn Pno.pdf')">Sojourn for Flugelhorn and Piano</button></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+
+
+        <section class="main-content">
+            <div class="color-wrap">
+                <p class="special">Program Notes</p>
+                <label for="text-toggle" class="text-toggle-label">
+                <span class="hg">Impressions of Detroit</span>
+                </label>
+                <input type="checkbox" id="text-toggle" class="text-toggle">
+                <div class="text-section">
+                    <p><em>Impressions of Detroit</em> was originally written in 1989, while the composer lived in the city, it was revised in 2010. Even in decline, Detroit is the definition of “solidly built.” Many of the massive structures were built
+                        in the 1920s and 1930’s, such as the train station, the library, and the Detroit Institute of Art. The huge rotting Ford factories in Highland Park, as well as the empty downtown department stores, bank buildings and Tiger Stadium
+                        (demolished in 2009) in CorkTown have many untold stories of thousands of people. And juxtaposed against all this is the massive steaming River Rouge Ford automobile plant.</p>
+                    <br />
+                    <p>The composer tried to describe musically some of the power of this past great city. It is a poignant moment to witness the results of previous people's hopes and dreams and tragic, at the same time, as one gazes at such past immense
+                        wealth, power and beauty. It is probably a sense akin to the original discoveries of the pyramid’s contents, or an ancient civilization site- if one takes a moment to observe and absorb.
+                    </p>
+                    <br />
+                    <p><strong>Movement 1:</strong> “<em>The Summit</em>” is about one of the largest buildings of downtown Detroit. It lies at the river’s edge and from the top of the building one can see all Detroit, which is modeled after Paris, with
+                        large boulevards flowing out like sun rays. The majesty of this building was originally as a hotel, but now is home to General Motors.</p>
+                    <br />
+                    <p><strong>Movement 2:</strong> “<em>The Corridor</em>” is a vision of Cass Corridor which has declined over the years. Once it boasted restaurants, jazz clubs and the like. Recently it is a subculture area upon which Wayne State University
+                        borders. As one wanders down this street, one imagines ghosts of earlier, happy times, as well as tragedies.</p>
+                    <br />
+                    <p><strong>Movement 3:</strong> “<em>The Bridge</em>” is a musical description of the Ambassador Bridge which connects Detroit with Windsor, Canada. The bridge is a spanned bridge, which is majestic and a tribute to the cooperation between
+                        the United States and Canada. When crossing from Canada, the bridge rises above the city, seemingly aloof to what lies below, but quickly brings the traveler into the harsh reality which is the physical remains of a once Great
+                        City.
+                    </p>
+                    <br />
+                    <p><em>Impressions of Detroit</em> is dedicated to the composer’s father, who worked as a church organist his entire life.</p>
+                </div>
+            </div>
+
+            <div class="color-wrap-one">
+                <label for="text-toggle-one" class="text-toggle-label-one">
+                <span class="hg-one">Suite for Brass: "Dinner for Two Parties of Four"</span>
+            </label>
+                <input type="checkbox" id="text-toggle-one" class="text-toggle-one">
+                <div class="text-section-one">
+                    <p><em>Suite for Brass:  “Dinner for Two Parties of Four”</em> was originally written in 1985 for Sam Pilafian and the Boston University Tuba Ensemble. That version was consequently performed as well by the Northwestern University Tuba
+                        Ensemble in 1991 in Evanston, Illinois. In both those performances, the third movement featured each player also playing one component of a drum set, as well as their tuba. Due to musical considerations this revision demands a
+                        separate percussionist. This revision was completed in June of 2013. The Suite contains three movements (courses): <em>Champagne and Caviar</em>; <em>Duckling in Red Wine</em>; and <em>Cognac and Cuban Cigar</em>.</p>
+                    <br />
+                    <p><strong>Performance Notes:</strong> Euphonium and Baritone Horn can be interchanged. The composer thought the first movement appropriate for the timbre of a euphonium, but he acknowledges he might fail a blind fold test! Exact tempos
+                        are up to the conductor, bearing in mind the incredible aural effect of such a group in a concert space! The second movement is a lyrical ode which builds to a sonorous (to be obvious) conclusion. The final movement is a joyful
+                        jaunt through several musical periods (the reference to Mr. Haydn should be somewhat slower) and can conclude with a typical “Riff Cadenza'' (ala blues) befitting such a “meal”! The percussionist may improvise, keeping in mind
+                        “the flavor” implicated in the written part!</p>
+                </div>
+            </div>
+
+
+
+    </main>
+
+
+</body>
+
+</html>

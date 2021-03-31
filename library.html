@@ -4,95 +4,85 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="sub-style.css">
+    <link rel="stylesheet" href="library.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@100;500&display=swap" rel="stylesheet">
     <script src="script.js"></script>
     <title>Digital Music Library</title>
 </head>
 
-<body class="main">
+<body>
     <header>
-        <div class="header light-text">
+        <div class="flex-wrapper">
             <h1 class="site-title">Christopher Morris Music</h1>
             <h2 class="page-title">Digital Music Library</h2>
         </div>
+        <input type="checkbox" id="nav-toggle" class="nav-toggle">
         <nav>
-            <ul class="sub-nav light-text">
-                <li><a class="page-link light-text" href="#audio-files">Audio Files</a></li>
-                <li><a class="page-link light-text" href="#program-notes">Program Notes</a></li>
-                <li><a class="page-link light-text" href="#works">Works</a></li>
+            <ul>
+                <li><a href="career.html">Career & Education</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="library.html">Digital Music Library</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="resources.html">Student Resources</a></li>
+                <li><a href="index.html">Home</a></li>
             </ul>
         </nav>
+        <label for="nav-toggle" class="nav-toggle-label">
+            <span></span>
+        </label>
     </header>
 
 
 
-    <main class="bottom-margin">
-        <h3 class="sub-heading">About the music</h3>
-        <article id="info" class="text-box alt">
-            <p>Christopher Morris has had original compositions performed in Boston and greater Boston, Massachusetts, Portland, Maine, Detroit, Michigan, Chicago, Illinois, Rome, Italy, Paris, France and Dusseldorf, Germany. He studied composition with
-                Paul Lansky (Merrywood Music School, Lenox, Massachusetts), English Composers Justin Connolly (Lenox, Massachusetts) and Alexander Goehr (New England Conservatory). He was a student for five years with Robert DiDomenica (New England Conservatory).
-                He also studied with M. William Karlins while pursuing his doctorate in music (Northwestern University School of Music).</p>
-            <br />
-            <p>He has been commissioned by the Chicago Area Chapter of the American String Teachers Association through the Teacher-Composer Alliance Program. He has composed works performed by international Oboist Fredric Cohen, international Trumpet soloist
-                Frank Düppenbecker and was commissioned by International Tuba soloist Samuel Pilafian. His work Californian Landscapes written for solo oboe, harp and band, won special acclaim in Paris. He was commissioned by the Boston University Alumni
-                Band for the Boston University Graduation Ceremony. He wrote the music for a television series produced by WNAC (CBS Affiliate) Boston titled "The Story Lady". He also wrote an original score for "Dark side of the Moon" a production of
-                the S.U.N.Y. Cortland College Drama Department production. His compositions have been performed by the Concord (Massachusetts) Community Band, The Portland (Maine) Youth Symphony, the Massachusetts Youth Wind Ensemble, The New England
-                Conservatory Youth Orchestra, the Lowell University Wind Ensemble, The School-craft College (Michigan) Wind Ensemble, The Cortland (NY) Community Orchestra, the Boston University Concert Band, the Boston University Tuba Ensemble, the Northwestern
-                University School of Music Wind Ensemble and the Ratingen (Germany) Brass Ensemble. His Sonata for Trumpet, Flugelhorn, Piano and Percussion was premiered in Dortmund, Germany by Trumpeter Frank Düppenbecker and received critical acclaim
-                in October 2012.</p>
-            <br />
-            <p>He still composes, teaches and lives with his family in Harrisville, New Hampshire.</p>
-        </article>
-
+    <main>
         <section>
             <h3 id="audio-files" class="sub-heading">Audio Files</h3>
             <table class="table">
                 <tr>
                     <th class="cell heading">Play Piece</th>
-                    <th class="cell heading">Performers</th>
                     <th class="cell heading">Title</th>
+                    <th class="cell heading">Performers</th>
                     <th class="cell heading">Date</th>
                     <th class="cell heading">Duration</th>
                     <th class="cell heading">Additional Information</th>
                 </tr>
                 <tr>
                     <td class="cell item"><audio class="controls" src="19 - Track 19.mp3" type="audio/mp3" controls></audio></td>
-                    <td class="cell item">Frank Düppenbecker (Flugelhorn), Klaus Eldert Müller (Piano)</td>
                     <td class="cell item title">Sojourn</td>
+                    <td class="cell item">Frank Düppenbecker (Flugelhorn), Klaus Eldert Müller (Piano)</td>
                     <td class="cell item">2014</td>
                     <td class="cell item">3:30</td>
                     <td class="cell item">Recording at St. Reinoldi Dortmund, Germany.</td>
                 </tr>
                 <tr>
                     <td class="cell item"><audio class="controls" src="" type="audio/mp3" controls></audio></td>
-                    <td class="cell item">Bläserensemble Ratingen Director Frank Düppenbecker</td>
                     <td class="cell item title">Impressions of Detroit, Movement 1 - Summit</td>
+                    <td class="cell item">Bläserensemble Ratingen Director Frank Düppenbecker</td>
                     <td class="cell item">2012</td>
                     <td class="cell item">6:04</td>
                     <td class="cell item">Recording at Evangelische Friedenskirche Ratingen, Germany.</td>
                 </tr>
                 <tr>
                     <td class="cell item"><audio class="controls" src="" type="audio/mp3" controls></audio></td>
-                    <td class="cell item">Bläserensemble Ratingen Director Frank Düppenbecker</td>
                     <td class="cell item title">Impressions of Detroit, Movement 2 - The Corridor</td>
+                    <td class="cell item">Bläserensemble Ratingen Director Frank Düppenbecker</td>
                     <td class="cell item">2012</td>
                     <td class="cell item">3:57</td>
                     <td class="cell item">Recording at Evangelische Friedenskirche Ratingen, Germany.</td>
                 </tr>
                 <tr>
                     <td class="cell item"><audio class="controls" src="homeAudio.mp3" type="audio/mp3" controls></audio></td>
-                    <td class="cell item">Bläserensemble Ratingen Director Frank Düppenbecker</td>
                     <td class="cell item title">Impressions of Detroit, Movement 3 - The Bridge</td>
+                    <td class="cell item">Bläserensemble Ratingen Director Frank Düppenbecker</td>
                     <td class="cell item">2012</td>
                     <td class="cell item">4:12</td>
                     <td class="cell item">Recording at Evangelische Friedenskirche Ratingen, Germany. This is the piece featured on the main page of my site.</td>
                 </tr>
                 <tr>
                     <td class="cell item"><audio class="controls" src="" type="audio/mp3" controls></audio></td>
-                    <td class="cell item">New England Conservatory Wind Ensemble, Christopher Morris conducting</td>
                     <td class="cell item title">Four Etchings for Wind Ensemble</td>
+                    <td class="cell item">New England Conservatory Wind Ensemble, Christopher Morris conducting</td>
                     <td class="cell item">1979</td>
                     <td class="cell item">4:34</td>
                     <td class="cell item">Reording at New England Conservatory of Music.</td>
@@ -100,6 +90,38 @@
             </table>
             <div class="flex-wrap">
                 <a class="top" href="#top">Top</a>
+            </div>
+        </section>
+
+        <section class="main-section">
+            <h3 id="works" class="sub-heading">Works: Sheet Music Available for Download</h3>
+
+            <article class="text-box alt wrapper">
+                <form class="form" name="form" onsubmit="return false">
+                    <p>Please enter your name and email. Then, click on the works for which you would like to download. PDFs will open in a new tab.</p>
+
+                    <br />
+
+                    <label for="name" id="nameField">Name:</label>
+                    <input type="text" name="nameField" id="name" placeholder="Enter Name" required>
+
+                    <br />
+
+                    <label for="email" id="emailField">Email:</label>
+                    <input type="email" name="emailField" id="email" pattern="^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$" placeholder="example@mail.com" required>
+
+                    <input type="submit" name="submit" id="submit" value="Submit">
+                </form>
+            </article>
+
+            <article class="text-box">
+                <ul class="list ">
+                    <li><button class="button" type="button" name="sojournFlgHnPno" onclick="download('Sojourn for FlglHn Pno.pdf')">Sojourn for Flugelhorn and Piano</button></li>
+                </ul>
+            </article>
+
+            <div class="flex-wrap ">
+                <a class="top " href="#top ">Top</a>
             </div>
         </section>
 
@@ -147,49 +169,8 @@
             </div>
         </section>
 
-        <section class="main-section">
-            <h3 id="works" class="sub-heading">Works: Sheet Music Available for Download</h3>
 
-            <article class="text-box alt wrapper">
-                <form class="form" name="form" onsubmit="return false">
-                    <p>Please enter your name and email. Then, click on the works for which you would like to download. PDFs will open in a new tab.</p>
-
-                    <br />
-
-                    <label for="name" id="nameField">Name:</label>
-                    <input type="text" name="nameField" id="name" placeholder="Enter Name" required>
-
-                    <br />
-
-                    <label for="email" id="emailField">Email:</label>
-                    <input type="email" name="emailField" id="email" pattern="^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$" placeholder="example@mail.com" required>
-
-                    <input type="submit" name="submit" id="submit" value="Submit">
-                </form>
-            </article>
-
-            <article class="text-box">
-                <ul class="list ">
-                    <li><button class="button" type="button" name="sojournFlgHnPno" onclick="download('Sojourn for FlglHn Pno.pdf')">Sojourn for Flugelhorn and Piano</button></li>
-                </ul>
-            </article>
-
-            <div class="flex-wrap ">
-                <a class="top " href="#top ">Top</a>
-            </div>
-        </section>
     </main>
-
-    <footer>
-        <ul class="foot-nav light-text ">
-            <li><a class="foot-link light-text " href="career.html ">Career & Education</a></li>
-            <li><a class="foot-link light-text " href="contact.html ">Contact</a></li>
-            <li><a class="foot-link light-text " href="library.html ">Digital Music Library</a></li>
-            <li> <a class="foot-link light-text " href="gallery.html ">Gallery</a></li>
-            <li><a class="foot-link light-text " href="resources.html ">Student Resources</a></li>
-            <li><a class="foot-link light-text " href="index.html ">Return to Home</a></li>
-        </ul>
-    </footer>
 
 
 </body>
