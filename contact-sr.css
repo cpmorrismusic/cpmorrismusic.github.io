@@ -226,6 +226,11 @@ nav a:focus {
     background-color: var(--superlightaqua);
 }
 
+.text-margin {
+    margin-right: 30%;
+    margin-left: 30%;
+}
+
 .sub-heading {
     text-align: center;
     text-transform: uppercase;
@@ -251,6 +256,13 @@ nav a:focus {
     width: 65%;
 }
 
+.text-edit-b {
+    font-family: var(--font);
+    text-transform: uppercase;
+    font-weight: bold;
+    padding-bottom: .5rem;
+}
+
 
 /* IMG STYLES */
 
@@ -262,12 +274,11 @@ nav a:focus {
 
 .img {
     display: block;
-    width: 60%;
+    width: 40%;
     margin-right: auto;
     margin-left: auto;
     padding-top: 2rem;
     padding-bottom: 2rem;
-    filter: grayscale(25%);
     border-top: solid .1rem var(--background);
 }
 
@@ -282,7 +293,7 @@ nav a:focus {
         margin-right: 2%;
         margin-left: 2%;
         background-color: none;
-        font-size: 1rem;
+        font-size: 1.15rem;
         font-weight: bold;
     }
     .text-box {
@@ -292,6 +303,9 @@ nav a:focus {
     }
     .hr {
         display: none;
+    }
+    .text-margin {
+        margin: 0;
     }
 }
 
