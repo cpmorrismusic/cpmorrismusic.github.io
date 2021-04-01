@@ -13,6 +13,8 @@ html {
 :root {
     --background: rgb(23, 4, 9);
     --aqua: #81C0B5;
+    --lightaqua: rgba(255, 255, 255, .5);
+    --superlightaqua: rgba(255, 255, 255, 0.425);
     --color: #F7EBC3;
     --hover: #F9FC9D;
     --font: 'Spartan', sans-serif;
@@ -206,13 +208,13 @@ nav a:focus {
 /* MAIN CONTENT */
 
 .text-box {
-    margin-right: 6rem;
-    margin-left: 6rem;
+    margin-right: 2%;
+    margin-left: 2%;
     padding: 12rem 2rem 2rem 2rem;
-    background-color: rgba(255, 255, 255, .5);
     text-align: left;
     font-size: 1rem;
     font-family: var(--text);
+    background-color: var(--lightaqua);
 }
 
 
@@ -222,57 +224,46 @@ https://codepen.io/heyDante/pen/bxEYOw */
 
 .gallery-container {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
-}
-
-.gallery-image img {
-    height: 25rem;
-    width: 35rem;
-    transform: scale(1.0);
-    transition: transform 0.4s ease;
+    align-items: space-evenly;
 }
 
 .img-width {
     object-fit: contain;
     object-position: center center;
-    max-width: 45rem;
-    min-width: 35rem;
+    width: 100%;
 }
 
 .image-box {
-    box-sizing: content-box;
     margin: 2rem;
-    height: 35rem;
-    width: 45rem;
+    height: 30%;
+    width: 40%;
     overflow: hidden;
-    display: inline-block;
     color: white;
     position: relative;
-    outline: solid .1rem #280607;
-    outline-offset: .5rem;
+    outline: solid .1rem var(--background);
+    outline-offset: 1rem;
 }
 
 .caption {
     position: absolute;
     bottom: .5rem;
     left: 1rem;
+    font-family: var(--text);
     opacity: 0;
     transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
 .transparent-box {
-    height: 35rem;
-    width: 45rem;
+    height: 100%;
+    width: 100%;
     background-color: rgba(0, 0, 0, 0);
     position: absolute;
     top: 0;
     left: 0;
     transition: background-color 0.3s ease;
-}
-
-.image-box:hover img {
-    transform: scale(1.1);
 }
 
 .image-box:hover .transparent-box {
@@ -285,5 +276,55 @@ https://codepen.io/heyDante/pen/bxEYOw */
 }
 
 .caption>p:nth-child(2) {
+    font-size: 1rem;
+}
+
+.img-width-alt {
+    object-fit: contain;
+    object-position: center center;
+    height: 100%;
+    width: 100%;
+}
+
+.image-box-alt {
+    margin: 2rem;
+    height: 40%;
+    width: 25%;
+    overflow: hidden;
+    color: white;
+    position: relative;
+    outline: solid .1rem var(--background);
+    outline-offset: 1rem;
+}
+
+.caption-alt {
+    position: absolute;
+    bottom: .5rem;
+    left: 1rem;
+    font-family: var(--text);
+    opacity: 0;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.transparent-box-alt {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: background-color 0.3s ease;
+}
+
+.image-box-alt:hover .transparent-box-alt {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.image-box-alt:hover .caption-alt {
+    transform: translateY(-20px);
+    opacity: 1.0;
+}
+
+.caption-alt>p:nth-child(2) {
     font-size: 1rem;
 }
