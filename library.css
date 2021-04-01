@@ -125,7 +125,7 @@ nav li {
 nav a {
     color: var(--color);
     text-decoration: none;
-    font-size: .9rem;
+    font-size: 1rem;
     font-family: var(--font);
     text-transform: uppercase;
     opacity: 0;
@@ -235,7 +235,7 @@ nav a:focus {
 .sub-title {
     margin-bottom: 2rem;
     font-family: var(--font);
-    font-size: 1.5rem;
+    font-size: 1.75rem;
     text-transform: uppercase;
     font-weight: bold;
     border-bottom: solid .1rem var(--background);
@@ -297,6 +297,9 @@ nav a:focus {
     .hidden {
         display: none;
     }
+    .a-f-box {
+        padding-top: 15rem;
+    }
 }
 
 @media screen and (max-width: 645px) {
@@ -320,7 +323,10 @@ nav a:focus {
     height: 20rem;
     margin-right: auto;
     margin-left: auto;
-    padding: 2rem;
+    padding-top: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 2rem;
+    padding-left: 1rem;
     font-family: var(--text);
 }
 
@@ -379,7 +385,7 @@ nav a:focus {
 .special {
     margin-top: 3rem;
     font-family: var(--font);
-    font-size: 1.5rem;
+    font-size: 1.75rem;
     text-transform: uppercase;
     font-weight: bold;
     border-bottom: solid .1rem var(--background);
@@ -482,6 +488,11 @@ nav a:focus {
     .text-section-one {
         display: none;
         outline: none;
+        text-align: left;
+    }
+    .hg,
+    .hg-one {
+        font-weight: normal;
     }
     .hg:hover,
     .hg-one:hover {

@@ -168,6 +168,13 @@ nav a:focus {
     nav a:hover::before {
         transform: scale(1, 1);
     }
+    .margins {
+        outline: solid .15rem var(--background);
+        outline-offset: 1rem;
+    }
+    .content-box {
+        text-align: center;
+    }
 }
 
 @media (max-width: 695px) {
@@ -234,7 +241,6 @@ h2 {
     background-color: var(--aqua);
     height: fit-content;
     padding: 2%;
-    text-align: center;
     font-size: 1rem;
     font-family: var(--text);
     display: none;
@@ -255,12 +261,13 @@ h2 {
 }
 
 .label-format {
-    padding-bottom: 1rem;
     padding-left: 1rem;
     color: var(--color);
     font-family: var(--font);
     font-size: 1.75rem;
     text-transform: uppercase;
+    z-index: 999;
+    background-color: var(--background);
 }
 
 .label-format-b {
@@ -298,8 +305,6 @@ h2 {
 .margins {
     padding: 2rem;
     background-color: rgba(255, 255, 255, .5);
-    outline: solid .15rem var(--background);
-    outline-offset: 1rem;
 }
 
 .p-alt {
@@ -314,6 +319,6 @@ h2 {
 }
 
 .hr {
-    width: 45%;
+    width: 50%;
     margin: .5rem auto 2rem auto;
 }

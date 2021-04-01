@@ -125,7 +125,7 @@ nav li {
 nav a {
     color: var(--color);
     text-decoration: none;
-    font-size: .9rem;
+    font-size: 1rem;
     font-family: var(--font);
     text-transform: uppercase;
     opacity: 0;
@@ -236,7 +236,7 @@ nav a:focus {
     text-transform: uppercase;
     font-family: var(--font);
     padding-bottom: 2rem;
-    font-size: 1.5rem;
+    font-size: 1.75rem;
 }
 
 .link {
@@ -253,7 +253,7 @@ nav a:focus {
     margin-right: auto;
     margin-bottom: 2rem;
     margin-left: auto;
-    width: 65%;
+    width: 50%;
 }
 
 .text-edit-b {
@@ -261,6 +261,7 @@ nav a:focus {
     text-transform: uppercase;
     font-weight: bold;
     padding-bottom: .5rem;
+    font-size: 1.5rem;
 }
 
 
@@ -274,7 +275,8 @@ nav a:focus {
 
 .img {
     display: block;
-    width: 40%;
+    width: 35%;
+    min-width: 250px;
     margin-right: auto;
     margin-left: auto;
     padding-top: 2rem;
@@ -285,27 +287,28 @@ nav a:focus {
 @media screen and (max-width: 1094px) {
     .color-wrap {
         margin: 0;
-        padding-bottom: 0;
+        padding-bottom: 1rem;
         background-color: var(--aqua);
     }
     .sub-heading {
-        padding: 2rem 2% 2% 2rem;
+        padding: 4rem 2% 2% 2rem;
         margin-right: 2%;
         margin-left: 2%;
         background-color: none;
-        font-size: 1.15rem;
+        font-size: 1.25rem;
         font-weight: bold;
     }
     .text-box {
         padding-top: 2rem;
         padding-bottom: 1.5rem;
         font-size: 1rem;
-    }
-    .hr {
-        display: none;
+        text-align: left;
     }
     .text-margin {
         margin: 0;
+    }
+    .text-edit-b {
+        font-size: 1.15rem;
     }
 }
 

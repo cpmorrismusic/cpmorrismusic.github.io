@@ -123,7 +123,7 @@ nav li {
 nav a {
     color: var(--color);
     text-decoration: none;
-    font-size: .9rem;
+    font-size: 1rem;
     font-family: var(--font);
     text-transform: uppercase;
     opacity: 0;
@@ -244,6 +244,25 @@ nav a:focus {
     width: 100%;
 }
 
+.main-divide {
+    width: 50%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.special {
+    width: 90%;
+    margin-top: 3rem;
+    margin-right: auto;
+    margin-bottom: 2rem;
+    margin-left: auto;
+    font-family: var(--font);
+    font-size: 1.75rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-bottom: solid .1rem var(--background);
+}
+
 hr {
     margin-top: 1rem;
     margin-bottom: 2rem;
@@ -285,6 +304,7 @@ hr {
 }
 
 .text-section {
+    width: 90%;
     background-color: rgba(255, 255, 255, .5);
     padding: 2rem;
     margin-top: .5rem;
@@ -292,7 +312,6 @@ hr {
     margin-right: 2%;
     margin-bottom: 2%;
     margin-left: 2%;
-    text-align: justify;
     font-size: 1rem;
     font-family: var(--text);
     display: block;
@@ -332,13 +351,13 @@ hr {
 }
 
 .text-section-one {
+    width: 90%;
     background-color: rgba(255, 255, 255, .5);
     padding: 2rem;
     margin-top: 1.5rem;
     margin-right: 2%;
     margin-bottom: 2%;
     margin-left: 2%;
-    text-align: justify;
     font-size: 1rem;
     font-family: var(--text);
     display: block;
@@ -378,13 +397,13 @@ hr {
 }
 
 .text-section-two {
+    width: 90%;
     background-color: rgba(255, 255, 255, .5);
     padding: 2rem;
     margin-top: 1.5rem;
     margin-right: 2%;
     margin-bottom: 2%;
     margin-left: 2%;
-    text-align: justify;
     font-size: 1rem;
     font-family: var(--text);
     display: block;
@@ -421,6 +440,7 @@ hr {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 
 .text-section-three {
@@ -428,7 +448,7 @@ hr {
     padding: 2rem;
     margin-top: 2rem;
     margin-bottom: 2%;
-    width: 80%;
+    width: 90%;
     font-size: 1rem;
     font-family: var(--text);
     text-align: center;
@@ -463,6 +483,12 @@ hr {
         display: none;
         outline: none;
     }
+    .heading,
+    .heading-one,
+    .heading-two,
+    .heading-three {
+        font-weight: normal;
+    }
     .heading:hover,
     .heading-one:hover,
     .heading-two:hover,
@@ -471,7 +497,7 @@ hr {
         cursor: pointer;
     }
     .blue-img {
-        margin-top: 16rem;
+        margin-top: 15rem;
         margin-bottom: 3rem;
     }
     .page-title {

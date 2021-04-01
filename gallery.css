@@ -125,7 +125,7 @@ nav li {
 nav a {
     color: var(--color);
     text-decoration: none;
-    font-size: .9rem;
+    font-size: 1rem;
     font-family: var(--font);
     text-transform: uppercase;
     opacity: 0;
@@ -196,6 +196,11 @@ nav a:focus {
     nav a:hover::before {
         transform: scale(1, 1);
     }
+    .image-box,
+    .image-box-alt {
+        outline: solid .1rem var(--background);
+        outline-offset: 1rem;
+    }
 }
 
 @media (max-width: 695px) {
@@ -240,11 +245,10 @@ https://codepen.io/heyDante/pen/bxEYOw */
     margin: 2rem;
     height: 30%;
     width: 40%;
+    min-width: 300px;
     overflow: hidden;
     color: white;
     position: relative;
-    outline: solid .1rem var(--background);
-    outline-offset: 1rem;
 }
 
 .caption {
@@ -290,11 +294,10 @@ https://codepen.io/heyDante/pen/bxEYOw */
     margin: 2rem;
     height: 40%;
     width: 25%;
+    min-width: 300px;
     overflow: hidden;
     color: white;
     position: relative;
-    outline: solid .1rem var(--background);
-    outline-offset: 1rem;
 }
 
 .caption-alt {
