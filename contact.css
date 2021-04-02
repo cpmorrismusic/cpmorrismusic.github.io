@@ -248,7 +248,7 @@ nav a:focus {
 
 .link {
     text-decoration: none;
-    color: var(--background);
+    color: darkblue;
     font-weight: bold;
 }
 
