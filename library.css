@@ -245,6 +245,13 @@ nav a:focus {
 
 /* MAIN CONTENT */
 
+.check-back {
+    font-family: var(--font);
+    text-transform: uppercase;
+    padding: 1rem;
+    text-align: center;
+}
+
 
 /* TABLE STYLES */
 
@@ -299,6 +306,9 @@ nav a:focus {
     }
     .a-f-box {
         padding-top: 15rem;
+    }
+    .check-back {
+        text-align: left;
     }
 }
 
@@ -356,6 +366,8 @@ nav a:focus {
     padding-right: .5rem;
     padding-bottom: 1rem;
     padding-left: .5rem;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
     background-color: var(--background);
     color: var(--hover);
     font-family: var(--font);
@@ -381,6 +393,25 @@ nav a:focus {
 
 
 /* Program Notes Section */
+
+.photos {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.cass {
+    width: 300px;
+    height: 200px;
+    padding: 1rem;
+}
+
+.bridge {
+    width: 400px;
+    padding: 1rem;
+}
 
 .special {
     margin-top: 3rem;
@@ -506,5 +537,6 @@ nav a:focus {
     .text-toggle-label-one {
         font-size: 1.25rem;
         text-align: center;
+        border-bottom: none;
     }
 }
