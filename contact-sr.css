@@ -212,18 +212,20 @@ nav a:focus {
     padding-top: 10rem;
     padding-bottom: 2rem;
     margin-right: 2%;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
     margin-left: 2%;
 }
 
 .text-box {
-    margin-right: 2%;
-    margin-left: 2%;
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
     padding: 3rem 2rem 2rem 2rem;
     text-align: center;
     font-size: 1.25rem;
     font-family: var(--text);
     background-color: var(--superlightaqua);
+    display: block;
 }
 
 .text-margin {
@@ -242,6 +244,7 @@ nav a:focus {
 .link {
     text-decoration: none;
     color: var(--background);
+    font-weight: bold;
 }
 
 .link:hover {

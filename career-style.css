@@ -290,7 +290,7 @@ hr {
 .text-toggle-label {
     margin-right: 2%;
     margin-left: 2%;
-    padding-top: 2rem;
+    padding-top: 1rem;
     padding-right: .55rem;
     padding-left: .55rem;
 }
@@ -337,7 +337,7 @@ hr {
 .text-toggle-label-one {
     margin-right: 2%;
     margin-left: 2%;
-    padding-top: 2rem;
+    padding-top: 1rem;
     padding-right: .55rem;
     padding-left: .55rem;
 }
@@ -383,7 +383,7 @@ hr {
 .text-toggle-label-two {
     margin-right: 2%;
     margin-left: 2%;
-    padding-top: 2rem;
+    padding-top: 1rem;
     padding-right: .55rem;
     padding-left: .55rem;
 }
@@ -429,9 +429,13 @@ hr {
 .text-toggle-label-three {
     margin-right: 2%;
     margin-left: 2%;
-    padding-top: 2rem;
+    padding-top: 1rem;
     padding-right: .55rem;
     padding-left: .55rem;
+}
+
+label.text-toggle-label-three {
+    text-align: center;
 }
 
 .color-wrap-three {
@@ -488,6 +492,7 @@ hr {
     .heading-two,
     .heading-three {
         font-weight: normal;
+        border: none;
     }
     .heading:hover,
     .heading-one:hover,

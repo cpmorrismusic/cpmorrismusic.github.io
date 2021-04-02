@@ -248,8 +248,9 @@ nav a:focus {
 .check-back {
     font-family: var(--font);
     text-transform: uppercase;
-    padding: 1rem;
+    padding: .75rem;
     text-align: center;
+    font-weight: bold;
 }
 
 
@@ -264,10 +265,11 @@ nav a:focus {
 }
 
 .heading {
+    padding: .5rem;
     background-color: var(--background);
     color: var(--color);
     font-family: var(--font);
-    font-weight: 500;
+    font-size: 1.15rem;
 }
 
 .item {
@@ -278,7 +280,7 @@ nav a:focus {
 .cell {
     border: solid 2px #280607;
     text-align: left;
-    padding: .5rem;
+    padding: .75rem;
 }
 
 .title {
@@ -305,10 +307,14 @@ nav a:focus {
         display: none;
     }
     .a-f-box {
-        padding-top: 15rem;
+        padding-top: 15.5rem;
     }
     .check-back {
         text-align: left;
+    }
+    .button {
+        outline-offset: .25rem;
+        font-size: .75rem;
     }
 }
 
@@ -362,6 +368,7 @@ nav a:focus {
 .button {
     width: 100%;
     font-size: 1rem;
+    font-weight: bold;
     padding-top: 1rem;
     padding-right: .5rem;
     padding-bottom: 1rem;
@@ -427,6 +434,7 @@ nav a:focus {
 
 .main-content {
     margin-right: 2%;
+    margin-bottom: 2rem;
     margin-left: 2%;
 }
 
