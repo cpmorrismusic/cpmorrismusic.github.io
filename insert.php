@@ -3,10 +3,10 @@ $nameField = $_POST['nameField'];
 $email = $_POST['emailField'];
 
 if (!empty($nameField) || !empty($email)) {
-    $host = "localhost:3306";
-    $dbUsername = "root";
-    $dbPassword = "";
-    $dbname = "chrissic_contactInfo";
+    $host = "localhost";
+    $dbUsername = "fmorris";
+    $dbPassword = "FCm0rri!!";
+    $dbname = "chrissic_contact-info";
 
     $conn = new mysqli($host, $dbUsername, $dbPassword, $dbname);
 
