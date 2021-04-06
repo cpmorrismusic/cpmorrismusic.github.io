@@ -333,7 +333,8 @@ nav a:focus {
 
 /* FORM STYLES */
 
-.bg-color {
+
+/*.bg-color {
     background-color: var(--superlightaqua);
     width: 90%;
     height: 20rem;
@@ -346,9 +347,14 @@ nav a:focus {
     font-family: var(--text);
 }
 
+
 .form {
     display: flex;
     flex-direction: column;
+}*/
+
+.bg-color {
+    display: none;
 }
 
 #email,
