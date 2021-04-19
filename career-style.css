@@ -315,6 +315,7 @@ hr {
     font-size: 1rem;
     font-family: var(--text);
     display: block;
+    text-align: justify;
 }
 
 .text-toggle:checked~.text-section {
@@ -361,6 +362,7 @@ hr {
     font-size: 1rem;
     font-family: var(--text);
     display: block;
+    text-align: justify;
 }
 
 .text-toggle-one:checked~.text-section-one {
@@ -407,6 +409,7 @@ hr {
     font-size: 1rem;
     font-family: var(--text);
     display: block;
+    text-align: justify;
 }
 
 .text-toggle-two:checked~.text-section-two {
@@ -479,6 +482,10 @@ label.text-toggle-label-three {
     display: none;
 }
 
+.ul-margin {
+    margin-left: 2.5rem;
+}
+
 @media screen and (max-width: 1094px) {
     .text-section,
     .text-section-one,
@@ -486,6 +493,7 @@ label.text-toggle-label-three {
     .text-section-three {
         display: none;
         outline: none;
+        text-align: left;
     }
     .heading,
     .heading-one,
@@ -518,7 +526,6 @@ label.text-toggle-label-three {
     }
     .text-section-three {
         font-size: .85rem;
-        text-align: left;
     }
 }
 
